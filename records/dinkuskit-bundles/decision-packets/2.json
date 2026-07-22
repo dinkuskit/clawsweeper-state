@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-22T23:11:38.268Z",
+  "updatedAt": "2026-07-22T22:59:57Z",
+  "subject": {
+    "repo": "dinkuskit/bundles",
+    "kind": "pull_request",
+    "number": 2,
+    "title": "Add the native ClawSweeper caller",
+    "url": "https://github.com/dinkuskit/bundles/pull/2",
+    "state": "open",
+    "labels": [
+      "rating: 🦪 silver shellfish",
+      "status: 📣 needs proof",
+      "P3",
+      "merge-risk: 🚨 security-boundary",
+      "merge-risk: 🚨 automation"
+    ],
+    "createdAt": "2026-07-22T22:59:57Z",
+    "updatedAt": "2026-07-22T22:59:57Z",
+    "headSha": "6ca34e9fae801aa933c52386fbbafcb2dace0f22"
+  },
+  "lane": "manual_review",
+  "priority": "P3",
+  "question": "Does Bobby approve merging this pinned reusable-workflow caller after a redacted non-publishing runtime demonstration confirms the intended secret and permission boundary?",
+  "rationale": "The repository contract reserves merge approval to Bobby, and this workflow intentionally delegates execution while forwarding credentials.",
+  "options": [
+    {
+      "title": "Approve after runtime proof",
+      "body": "Require a redacted successful `publish: false` dispatch after the declared dependency is available, then approve the scoped caller.",
+      "recommended": true
+    },
+    {
+      "title": "Hold the integration",
+      "body": "Leave the caller unmerged until the reusable workflow contract or credential boundary is narrowed further.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve after runtime proof",
+    "body": "Require a redacted successful `publish: false` dispatch after the declared dependency is available, then approve the scoped caller.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "The checked-in repository policy explicitly assigns merge approval to Bobby.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-bundles/items/2.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/bundles/pull/2#issuecomment-5052563099",
+    "reviewedAt": "2026-07-22T23:11:38.268Z",
+    "mainSha": "5faf9a469e6a3c53e0012beb262d114e45457a1b"
+  }
+}
