@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-22T22:25:14.105Z",
-  "updatedAt": "2026-07-22T13:06:21Z",
+  "generatedAt": "2026-07-22T22:36:28.012Z",
+  "updatedAt": "2026-07-22T22:26:36Z",
   "subject": {
     "repo": "dinkuskit/blocks",
     "kind": "pull_request",
@@ -10,45 +10,45 @@
     "url": "https://github.com/dinkuskit/blocks/pull/7",
     "state": "open",
     "labels": [
-      "rating: 🧂 unranked krab",
+      "rating: 🦪 silver shellfish",
       "status: 📣 needs proof",
       "P3",
       "merge-risk: 🚨 compatibility"
     ],
     "createdAt": "2026-07-21T18:42:02Z",
-    "updatedAt": "2026-07-22T13:06:21Z",
+    "updatedAt": "2026-07-22T22:26:36Z",
     "headSha": "d15a5e41df12c086e716f7d1d609abf67e36ac6d"
   },
   "lane": "product_direction",
   "priority": "P3",
-  "question": "Should the generic blocks package own this Project Record composed-block API, or should this portfolio-oriented composition remain in a consumer site?",
-  "rationale": "The change adds a durable public API and renderer, while repository policy requires generic package boundaries and explicit approval before merge.",
+  "question": "Should the generic blocks package retain the Project Record composed-block API, or should this portfolio-oriented composition remain consumer-owned?",
+  "rationale": "The change introduces a durable public block contract, while repository policy requires generic package boundaries and explicit Bobby approval before merge.",
   "options": [
     {
       "title": "Sponsor the generic block",
-      "body": "Approve the public composed-block direction and require real editor-to-renderer proof before merge.",
+      "body": "Approve the package-level contract and require redacted editor-to-SSR proof for the exact implementation before merge.",
       "recommended": true
     },
     {
       "title": "Keep it consumer-owned",
-      "body": "Decline the package API and move the project-specific composition to the portfolio consumer while retaining only reusable primitives here.",
+      "body": "Decline the package API and retain only reusable primitives in this repository while moving the composition to a consumer site.",
       "recommended": false
     }
   ],
   "recommendation": {
     "title": "Sponsor the generic block",
-    "body": "Approve the public composed-block direction and require real editor-to-renderer proof before merge.",
+    "body": "Approve the package-level contract and require redacted editor-to-SSR proof for the exact implementation before merge.",
     "recommended": true
   },
   "likelyOwner": {
-    "person": "bobby",
-    "reason": "Repository policy names Bobby as the approval authority for merges and this public-surface decision.",
+    "person": "Bobby",
+    "reason": "Repository policy names Bobby as the explicit merge approval authority for this package.",
     "confidence": "high"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-blocks/items/7.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/7#issuecomment-5052250547",
-    "reviewedAt": "2026-07-22T22:25:14.105Z",
-    "mainSha": "81b8e8fc0269fb18e10d8f0a441273b0296548d3"
+    "reviewedAt": "2026-07-22T22:36:28.012Z",
+    "mainSha": "1fe7de51d39fcd4f6dd7e9d92d77e3cb18bf1439"
   }
 }
