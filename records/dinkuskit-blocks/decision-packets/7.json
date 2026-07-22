@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-22T22:36:28.012Z",
-  "updatedAt": "2026-07-22T22:26:36Z",
+  "generatedAt": "2026-07-22T22:59:43.993Z",
+  "updatedAt": "2026-07-22T22:54:36Z",
   "subject": {
     "repo": "dinkuskit/blocks",
     "kind": "pull_request",
@@ -10,45 +10,46 @@
     "url": "https://github.com/dinkuskit/blocks/pull/7",
     "state": "open",
     "labels": [
-      "rating: 🦪 silver shellfish",
-      "status: 📣 needs proof",
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
       "P3",
       "merge-risk: 🚨 compatibility"
     ],
     "createdAt": "2026-07-21T18:42:02Z",
-    "updatedAt": "2026-07-22T22:26:36Z",
-    "headSha": "d15a5e41df12c086e716f7d1d609abf67e36ac6d"
+    "updatedAt": "2026-07-22T22:54:36Z",
+    "headSha": "ee1de75f491c5a13da9f9cef97432f22d7cba295"
   },
-  "lane": "product_direction",
+  "lane": "manual_review",
   "priority": "P3",
-  "question": "Should the generic blocks package retain the Project Record composed-block API, or should this portfolio-oriented composition remain consumer-owned?",
-  "rationale": "The change introduces a durable public block contract, while repository policy requires generic package boundaries and explicit Bobby approval before merge.",
+  "question": "Should this draft PR be closed as already represented on current main, or retained as the explicit reviewed vehicle for the Project Record contract?",
+  "rationale": "The repository policy prohibits automated closure, and only the approval-gate owner can confirm the intended relationship between the draft branch and the implementation already present on main.",
   "options": [
     {
-      "title": "Sponsor the generic block",
-      "body": "Approve the package-level contract and require redacted editor-to-SSR proof for the exact implementation before merge.",
+      "title": "Reconcile as already on main",
+      "body": "Confirm that current main intentionally contains the reviewed implementation and close the draft PR manually.",
       "recommended": true
     },
     {
-      "title": "Keep it consumer-owned",
-      "body": "Decline the package API and retain only reusable primitives in this repository while moving the composition to a consumer site.",
+      "title": "Retain the PR for an explicit merge gate",
+      "body": "Keep the draft PR open if it remains the required human-reviewed record before the contract is considered merged.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Sponsor the generic block",
-    "body": "Approve the package-level contract and require redacted editor-to-SSR proof for the exact implementation before merge.",
+    "title": "Reconcile as already on main",
+    "body": "Confirm that current main intentionally contains the reviewed implementation and close the draft PR manually.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "Bobby",
-    "reason": "Repository policy names Bobby as the explicit merge approval authority for this package.",
+    "reason": "The supplied sponsorship record names Bobby as the merge-gate owner for this package contract.",
     "confidence": "high"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-blocks/items/7.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/7#issuecomment-5052250547",
-    "reviewedAt": "2026-07-22T22:36:28.012Z",
+    "reviewedAt": "2026-07-22T22:59:43.993Z",
     "mainSha": "1fe7de51d39fcd4f6dd7e9d92d77e3cb18bf1439"
   }
 }
