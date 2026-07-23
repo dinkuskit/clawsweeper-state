@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-23T15:06:10.213Z",
+  "updatedAt": "2026-07-23T15:03:05Z",
+  "subject": {
+    "repo": "dinkuskit/template-store",
+    "kind": "pull_request",
+    "number": 1,
+    "title": "ci: add ClawSweeper command trigger",
+    "url": "https://github.com/dinkuskit/template-store/pull/1",
+    "state": "open",
+    "labels": [
+      "rating: 🧂 unranked krab",
+      "status: 📣 needs proof",
+      "P1",
+      "merge-risk: 🚨 security-boundary"
+    ],
+    "createdAt": "2026-07-21T19:31:45Z",
+    "updatedAt": "2026-07-23T15:03:05Z",
+    "headSha": "23ae67746573154a61717c107204b62b5103e916"
+  },
+  "lane": "security_boundary",
+  "priority": "P1",
+  "question": "Should this public-comment caller remain a non-merge smoke artifact until the shared runner is demonstrably credential-free and isolated from prompt-injected requests?",
+  "rationale": "The required isolation boundary is outside this repository-local YAML and determines whether public comments may safely initiate the delegated review path.",
+  "options": [
+    {
+      "title": "Pause the caller",
+      "body": "Keep this branch non-mergeable or close it as the contributor proposed until the credential-free isolation and adversarial canary are demonstrated.",
+      "recommended": true
+    },
+    {
+      "title": "Approve after isolation proof",
+      "body": "Permit a refreshed caller only after maintainers review proof that the shared runner cannot expose credentials to model-invoked commands.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Pause the caller",
+    "body": "Keep this branch non-mergeable or close it as the contributor proposed until the credential-free isolation and adversarial canary are demonstrated.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "Their comments document both the selected upstream architecture and the failed-closed smoke, making them the best available routing contact despite limited current-main ownership history.",
+    "confidence": "low"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-template-store/items/1.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/template-store/pull/1#issuecomment-5060042189",
+    "reviewedAt": "2026-07-23T15:06:10.213Z",
+    "mainSha": "93c6991af4b433877d5bf252e059822e45562662"
+  }
+}
