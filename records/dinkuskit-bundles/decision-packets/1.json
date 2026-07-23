@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-23T15:27:02.809Z",
+  "updatedAt": "2026-07-23T15:24:34Z",
+  "subject": {
+    "repo": "dinkuskit/bundles",
+    "kind": "pull_request",
+    "number": 1,
+    "title": "ci: add ClawSweeper command trigger",
+    "url": "https://github.com/dinkuskit/bundles/pull/1",
+    "state": "open",
+    "labels": [
+      "rating: 🦪 silver shellfish",
+      "status: 📣 needs proof",
+      "P1",
+      "merge-risk: 🚨 security-boundary",
+      "merge-risk: 🚨 automation"
+    ],
+    "createdAt": "2026-07-21T19:31:45Z",
+    "updatedAt": "2026-07-23T15:24:34Z",
+    "headSha": "ef6acad9f02a3104281d76d2aea1f2de6db13c71"
+  },
+  "lane": "security_boundary",
+  "priority": "P1",
+  "question": "Should this repository permit the command listener to execute only after the reusable workflow is pinned and the credential-free runner isolation has passed the stated adversarial canary?",
+  "rationale": "The required boundary spans central workflow governance and runner identity, so it cannot be safely accepted as an ordinary repository-local code change.",
+  "options": [
+    {
+      "title": "Pause activation pending isolation",
+      "body": "Keep the listener unmerged or inactive until the reusable revision is pinned and the isolated runner boundary has redacted proof.",
+      "recommended": true
+    },
+    {
+      "title": "Approve the centralized boundary",
+      "body": "Bobby may explicitly accept the centrally managed runner and workflow boundary after reviewing its credential and command allowlist controls.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Pause activation pending isolation",
+    "body": "Keep the listener unmerged or inactive until the reusable revision is pinned and the isolated runner boundary has redacted proof.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "AGENTS.md assigns Bobby the explicit merge and production-activation approval gate.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-bundles/items/1.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/bundles/pull/1#issuecomment-5060264580",
+    "reviewedAt": "2026-07-23T15:27:02.809Z",
+    "mainSha": "df754d4e29f018f518cb5138cd0a72baae83a913"
+  }
+}
