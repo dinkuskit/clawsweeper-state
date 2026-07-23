@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-23T15:05:59.979Z",
+  "updatedAt": "2026-07-23T15:03:10Z",
+  "subject": {
+    "repo": "dinkuskit/template-marketing",
+    "kind": "pull_request",
+    "number": 1,
+    "title": "ci: add ClawSweeper command trigger",
+    "url": "https://github.com/dinkuskit/template-marketing/pull/1",
+    "state": "open",
+    "labels": [
+      "rating: 🦐 gold shrimp",
+      "status: 📣 needs proof",
+      "P1",
+      "merge-risk: 🚨 compatibility",
+      "merge-risk: 🚨 security-boundary"
+    ],
+    "createdAt": "2026-07-21T19:31:45Z",
+    "updatedAt": "2026-07-23T15:03:10Z",
+    "headSha": "bf091009edb11edb4b1672bb018292103f35b99c"
+  },
+  "lane": "security_boundary",
+  "priority": "P1",
+  "question": "Should this temporary smoke PR be manually closed while the centralized workflow remains unactivated, or retained pending an immutable workflow revision and approved credential-free runner boundary?",
+  "rationale": "The contributor reports the smoke target is superseded, but the repository policy forbids automatic closure and the activation boundary requires a human security decision.",
+  "options": [
+    {
+      "title": "Close the temporary smoke target manually",
+      "body": "Close it without merging because the current source already contains the caller and activation remains blocked by the credential-boundary gate.",
+      "recommended": true
+    },
+    {
+      "title": "Retain for controlled activation review",
+      "body": "Keep it open only if maintainers need this branch to validate a pinned revision after approving the isolated runner boundary.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Close the temporary smoke target manually",
+    "body": "Close it without merging because the current source already contains the caller and activation remains blocked by the credential-boundary gate.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "They supplied the implementation and the current smoke and supersession context.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-template-marketing/items/1.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/template-marketing/pull/1#issuecomment-5060041502",
+    "reviewedAt": "2026-07-23T15:05:59.979Z",
+    "mainSha": "595802ce314b339f060c46d33e81f4f4426cc5f5"
+  }
+}
