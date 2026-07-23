@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-23T15:17:43.147Z",
+  "updatedAt": "2026-07-23T15:15:04Z",
+  "subject": {
+    "repo": "dinkuskit/inventory",
+    "kind": "pull_request",
+    "number": 1,
+    "title": "ci: add ClawSweeper command trigger",
+    "url": "https://github.com/dinkuskit/inventory/pull/1",
+    "state": "open",
+    "labels": [
+      "rating: 🦪 silver shellfish",
+      "status: 📣 needs proof",
+      "P1",
+      "merge-risk: 🚨 security-boundary",
+      "merge-risk: 🚨 automation"
+    ],
+    "createdAt": "2026-07-21T19:31:45Z",
+    "updatedAt": "2026-07-23T15:15:04Z",
+    "headSha": "f0cf060953672c50fb1b72f5c3ee0d842eca0bdb"
+  },
+  "lane": "security_boundary",
+  "priority": "P1",
+  "question": "Should this repository enable the public comment-triggered caller only after the central workflow runs in the documented credential-free allowlisted boundary and passes adversarial-canary proof?",
+  "rationale": "The required runner-isolation boundary and its acceptable evidence are security and release-gate choices that cannot be resolved by this repository-local caller alone.",
+  "options": [
+    {
+      "title": "Require isolation proof before enabling",
+      "body": "Keep the caller unmerged until the central execution boundary is credential-free, allowlisted, adversarially tested, and explicitly approved.",
+      "recommended": true
+    },
+    {
+      "title": "Decline this enrollment",
+      "body": "Do not enable repository-local command triggering if the required isolated execution environment is not available.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Require isolation proof before enabling",
+    "body": "Keep the caller unmerged until the central execution boundary is credential-free, allowlisted, adversarially tested, and explicitly approved.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "AGENTS.md names Bobby as the required approver for merges and production-affecting actions.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-inventory/items/1.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/1#issuecomment-5060163937",
+    "reviewedAt": "2026-07-23T15:17:43.147Z",
+    "mainSha": "d5ff2309d5bd4bdfd07f0ceb0557a431fe088caf"
+  }
+}
