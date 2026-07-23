@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-23T01:06:58.797Z",
+  "updatedAt": "2026-07-23T00:51:28Z",
+  "subject": {
+    "repo": "dinkuskit/blocks",
+    "kind": "pull_request",
+    "number": 22,
+    "title": "feat: freeze Dinkus architecture contracts",
+    "url": "https://github.com/dinkuskit/blocks/pull/22",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P3",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-07-22T23:05:50Z",
+    "updatedAt": "2026-07-23T00:51:28Z",
+    "headSha": "cd55567554967b9b1cf81f6c713cd77da0d5c397"
+  },
+  "lane": "merge_risk",
+  "priority": "P3",
+  "question": "Should this PR establish the `dinkus-blocks` cascade layer as the compatibility contract for existing consumer overrides?",
+  "rationale": "The change deliberately alters stylesheet precedence across every renderer, and the repository policy reserves merges for Bobby's explicit approval.",
+  "options": [
+    {
+      "title": "Approve the layer contract",
+      "body": "Accept the documented unlayered-site override model as the supported compatibility behavior for existing consumers.",
+      "recommended": true
+    },
+    {
+      "title": "Require upgrade evidence first",
+      "body": "Add an existing-consumer override fixture demonstrating the intended precedence before approving the new contract.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the layer contract",
+    "body": "Accept the documented unlayered-site override model as the supported compatibility behavior for existing consumers.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "The repository policy names Bobby as the required merge approver and the merged baseline identifies the same merge-gate role.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-blocks/items/22.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/22#issuecomment-5053225208",
+    "reviewedAt": "2026-07-23T01:06:58.797Z",
+    "mainSha": "b865ec5d7593f83fb8db5ad1729b7f0819240ace"
+  }
+}
