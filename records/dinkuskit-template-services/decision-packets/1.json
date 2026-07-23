@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-23T15:05:37.667Z",
+  "updatedAt": "2026-07-23T15:03:07Z",
+  "subject": {
+    "repo": "dinkuskit/template-services",
+    "kind": "pull_request",
+    "number": 1,
+    "title": "ci: add ClawSweeper command trigger",
+    "url": "https://github.com/dinkuskit/template-services/pull/1",
+    "state": "open",
+    "labels": [
+      "rating: 🦪 silver shellfish",
+      "status: 📣 needs proof",
+      "P1",
+      "merge-risk: 🚨 security-boundary"
+    ],
+    "createdAt": "2026-07-21T19:31:45Z",
+    "updatedAt": "2026-07-23T15:03:07Z",
+    "headSha": "6dbe201a8e3d13442c9e62198bc38bb1631035f8"
+  },
+  "lane": "security_boundary",
+  "priority": "P1",
+  "question": "Has the centralized ClawSweeper workflow been deployed in a credential-free allowlisted runner/container/VM boundary that has passed the stated adversarial canary?",
+  "rationale": "The author identifies this as a P1 human gate, and the local caller cannot establish or validate isolation from runner-user credentials.",
+  "options": [
+    {
+      "title": "Require isolated deployment proof",
+      "body": "Keep the caller inactive until the reusable workflow runs in a credential-free allowlisted boundary with adversarial-canary evidence.",
+      "recommended": true
+    },
+    {
+      "title": "Accept the current runner boundary",
+      "body": "Explicitly accept the documented risk of untrusted review cognition sharing a credential-bearing runner user.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Require isolated deployment proof",
+    "body": "Keep the caller inactive until the reusable workflow runs in a credential-free allowlisted boundary with adversarial-canary evidence.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "They documented the coordinated architecture and its activation gate.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-template-services/items/1.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/template-services/pull/1#issuecomment-5060038879",
+    "reviewedAt": "2026-07-23T15:05:37.667Z",
+    "mainSha": "6690bf64e3de9204b58c66efc1284ba58cc88a05"
+  }
+}
