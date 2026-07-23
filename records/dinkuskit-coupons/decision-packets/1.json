@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-23T15:22:28.573Z",
+  "updatedAt": "2026-07-23T15:19:33Z",
+  "subject": {
+    "repo": "dinkuskit/coupons",
+    "kind": "pull_request",
+    "number": 1,
+    "title": "ci: add ClawSweeper command trigger",
+    "url": "https://github.com/dinkuskit/coupons/pull/1",
+    "state": "open",
+    "labels": [
+      "rating: 🦪 silver shellfish",
+      "status: 📣 needs proof",
+      "P1",
+      "merge-risk: 🚨 security-boundary",
+      "merge-risk: 🚨 automation"
+    ],
+    "createdAt": "2026-07-21T19:31:45Z",
+    "updatedAt": "2026-07-23T15:19:33Z",
+    "headSha": "c1bd6fc96ef452e8e344288e532e9fa039e41289"
+  },
+  "lane": "security_boundary",
+  "priority": "P1",
+  "question": "Should this repository enroll the public comment-triggered ClawSweeper caller only after an immutable workflow revision and credential-free execution boundary are demonstrated?",
+  "rationale": "The acceptable trust boundary for public comment content, runner credentials, and centrally managed workflow updates requires repository-owner approval rather than a mechanical patch decision.",
+  "options": [
+    {
+      "title": "Hold enrollment pending isolation proof",
+      "body": "Keep the caller unmerged until the reusable workflow is pinned and a credential-free allowlisted runner or container passes an adversarial canary.",
+      "recommended": true
+    },
+    {
+      "title": "Approve hardened enrollment",
+      "body": "Authorize a revised caller after reviewing the immutable workflow revision, its authorization path, and successful isolated runtime proof.",
+      "recommended": false
+    },
+    {
+      "title": "Accept rolling central updates",
+      "body": "Allow the `@main` delegation and current runner model only if the repository owner explicitly accepts their security and automation risk.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Hold enrollment pending isolation proof",
+    "body": "Keep the caller unmerged until the reusable workflow is pinned and a credential-free allowlisted runner or container passes an adversarial canary.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "The repository policy explicitly names Bobby as the required merge approver.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-coupons/items/1.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/coupons/pull/1#issuecomment-5060216011",
+    "reviewedAt": "2026-07-23T15:22:28.573Z",
+    "mainSha": "0874d304a02d7778e7d83e3b5401193e7013e3cd"
+  }
+}
