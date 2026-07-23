@@ -1,54 +1,55 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-23T12:40:58.614Z",
-  "updatedAt": "2026-07-23T12:38:26Z",
+  "generatedAt": "2026-07-23T14:10:36.794Z",
+  "updatedAt": "2026-07-23T14:07:58Z",
   "subject": {
     "repo": "dinkuskit/blocks",
     "kind": "pull_request",
     "number": 28,
-    "title": "fix: stretch identity slot roots to prevent absolute-only collapse",
+    "title": "fix: add opt-in sizing for absolute-only identity art",
     "url": "https://github.com/dinkuskit/blocks/pull/28",
     "state": "open",
     "labels": [
-      "rating: 🧂 unranked krab",
-      "status: 📣 needs proof",
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
       "P2",
       "merge-risk: 🚨 compatibility"
     ],
     "createdAt": "2026-07-23T12:33:51Z",
-    "updatedAt": "2026-07-23T12:38:26Z",
-    "headSha": "d60b97435d0246fb2f6ccb19e0f4fc200b1d0242"
+    "updatedAt": "2026-07-23T14:07:58Z",
+    "headSha": "45ecb70b8f92c32b3943a6836879bac2936e1b21"
   },
   "lane": "product_direction",
   "priority": "P2",
-  "question": "Should the identity slot's public default remain centered for widthless roots, or should all identity slot roots stretch to the full cell width?",
-  "rationale": "The proposed CSS resolves absolute-only artwork but deliberately changes the rendered default for existing custom slot roots, and the repository treats documented hooks as public API.",
+  "question": "Should the package adopt `data-dinkus-project-record-identity=\"fill\"` as a supported public identity-slot contract?",
+  "rationale": "The implementation is compatibility-preserving, but the new documented hook becomes part of the package's public API and repository policy reserves merge approval to Bobby.",
   "options": [
     {
-      "title": "Retain centered default",
-      "body": "Keep the legacy centered layout and require or provide an explicit opt-in for full-width absolute-only artwork.",
+      "title": "Adopt the explicit fill contract",
+      "body": "Approve the documented opt-in while preserving the existing centered default for all other identity-slot roots.",
       "recommended": true
     },
     {
-      "title": "Adopt stretch as the contract",
-      "body": "Accept full-width stretching for all custom identity slot roots and add upgrade-facing coverage and proof for that visual change.",
+      "title": "Keep the current slot surface",
+      "body": "Decline the new public hook and retain consumer-side sizing overrides until a different package contract is chosen.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Retain centered default",
-    "body": "Keep the legacy centered layout and require or provide an explicit opt-in for full-width absolute-only artwork.",
+    "title": "Adopt the explicit fill contract",
+    "body": "Approve the documented opt-in while preserving the existing centered default for all other identity-slot roots.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "Bobby",
-    "reason": "Repository policy and the Project Record contract reserve the merge decision for Bobby.",
+    "reason": "AGENTS.md requires Bobby's explicit approval for merges and identifies documented hooks as public API.",
     "confidence": "high"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-blocks/items/28.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/28#issuecomment-5058505803",
-    "reviewedAt": "2026-07-23T12:40:58.614Z",
+    "reviewedAt": "2026-07-23T14:10:36.794Z",
     "mainSha": "ad58a7f9767eecc8c9e47a87334c1c144ff0a323"
   }
 }
