@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-06T12:46:16.675Z",
+  "updatedAt": "2026-08-06T12:43:07Z",
+  "subject": {
+    "repo": "dinkuskit/blocks",
+    "kind": "pull_request",
+    "number": 30,
+    "title": "feat: add generic Project Record edit annotations",
+    "url": "https://github.com/dinkuskit/blocks/pull/30",
+    "state": "open",
+    "labels": [
+      "rating: 🧂 unranked krab",
+      "status: 📣 needs proof",
+      "P3",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-08-06T04:38:47Z",
+    "updatedAt": "2026-08-06T12:43:07Z",
+    "headSha": "68d2f37348623ff1e3c1793a43f9eced3e8e3a54"
+  },
+  "lane": "product_direction",
+  "priority": "P3",
+  "question": "Should ProjectRecord annotations become a supported permanent public Astro contract for site-owned edit metadata?",
+  "rationale": "The implementation adds exported types and an optional renderer prop; repository policy requires explicit Bobby approval before merge, and source review cannot choose that API direction.",
+  "options": [
+    {
+      "title": "Sponsor the generic annotation contract",
+      "body": "Approve the data-only annotations as a public contract after the contributor adds redacted real-setup proof of the fixture behavior.",
+      "recommended": true
+    },
+    {
+      "title": "Keep the existing slot-only surface",
+      "body": "Decline the new annotation API and keep site customization on the current documented renderer and slot contracts.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Sponsor the generic annotation contract",
+    "body": "Approve the data-only annotations as a public contract after the contributor adds redacted real-setup proof of the fixture behavior.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "AGENTS.md assigns Bobby the explicit merge approval gate for this repository.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-blocks/items/30.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/30#issuecomment-5204823542",
+    "reviewedAt": "2026-08-06T12:46:16.675Z",
+    "mainSha": "7dddfa8b003848f6e4a657e1a914490baf80d200"
+  }
+}
