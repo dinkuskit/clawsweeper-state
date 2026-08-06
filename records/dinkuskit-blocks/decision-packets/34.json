@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-06T23:31:19.223Z",
+  "updatedAt": "2026-08-06T23:26:41Z",
+  "subject": {
+    "repo": "dinkuskit/blocks",
+    "kind": "pull_request",
+    "number": 34,
+    "title": "Prove EmDash 0.32 compatibility",
+    "url": "https://github.com/dinkuskit/blocks/pull/34",
+    "state": "open",
+    "labels": [
+      "rating: 🧂 unranked krab",
+      "status: 📣 needs proof",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-08-06T23:17:02Z",
+    "updatedAt": "2026-08-06T23:26:41Z",
+    "headSha": "3354756319a9bcced44a5361d40f71aeeb9da490"
+  },
+  "lane": "release_inclusion",
+  "priority": "P2",
+  "question": "After inspectable two-version runtime proof is attached, should Bobby approve advertising EmDash 0.32.0 in this package's tested peer contract?",
+  "rationale": "AGENTS.md explicitly reserves merge approval to Bobby, and this PR changes the public pre-1.0 compatibility promise.",
+  "options": [
+    {
+      "title": "Approve after matrix proof",
+      "body": "Approve the contract only after redacted evidence demonstrates the documented 0.29.0 and 0.32.0 runtime scenarios.",
+      "recommended": true
+    },
+    {
+      "title": "Keep the existing contract",
+      "body": "Decline the widening and retain the 0.29.0-only peer contract until a repeatable compatibility lane is available.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve after matrix proof",
+    "body": "Approve the contract only after redacted evidence demonstrates the documented 0.29.0 and 0.32.0 runtime scenarios.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "The repository gate explicitly names Bobby as the required approver.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-blocks/items/34.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/34#issuecomment-5209947968",
+    "reviewedAt": "2026-08-06T23:31:19.223Z",
+    "mainSha": "17529d477ab19a0c3fbae05e514d14029e70feda"
+  }
+}
