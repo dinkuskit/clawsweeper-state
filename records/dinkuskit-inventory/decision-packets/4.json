@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-25T03:58:30.313Z",
-  "updatedAt": "2026-08-25T03:56:02Z",
+  "generatedAt": "2026-08-25T04:05:36.556Z",
+  "updatedAt": "2026-08-25T04:03:21Z",
   "subject": {
     "repo": "dinkuskit/inventory",
     "kind": "pull_request",
@@ -10,45 +10,46 @@
     "url": "https://github.com/dinkuskit/inventory/pull/4",
     "state": "open",
     "labels": [
-      "rating: 🦪 silver shellfish",
-      "status: 📣 needs proof",
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
       "P2",
       "merge-risk: 🚨 other"
     ],
     "createdAt": "2026-08-25T03:53:36Z",
-    "updatedAt": "2026-08-25T03:56:02Z",
+    "updatedAt": "2026-08-25T04:03:21Z",
     "headSha": "ac5686f3d0395ab9b061515f83967bf61abd8280"
   },
   "lane": "product_direction",
   "priority": "P2",
-  "question": "Does Bobby explicitly approve merging the canonical Durable Object architecture and manual WooCommerce/Katana cutover direction recorded by this PR?",
-  "rationale": "AGENTS.md reserves merge approval to Bobby, and this documentation establishes the product's storage, client, and cutover direction.",
+  "question": "Does Bobby explicitly approve merging the canonical Durable Object architecture and manual opening-balance cutover policy recorded by this PR?",
+  "rationale": "The repository contract reserves merge approval to Bobby, while this PR establishes the future system's authoritative writer, provider boundary, and cutover strategy.",
   "options": [
     {
-      "title": "Approve the recorded direction",
-      "body": "Confirm the architecture and manual-cutover decisions, then allow normal proof review to proceed.",
+      "title": "Confirm the recorded direction",
+      "body": "Bobby explicitly approves the documented architecture and manual-cutover policy so normal merge review can proceed.",
       "recommended": true
     },
     {
-      "title": "Revise the direction",
-      "body": "Request changes before merge if the canonical writer, provider boundary, or cutover policy should differ.",
+      "title": "Revise the policy",
+      "body": "Request changes if the canonical writer, provider boundary, or cutover model should differ before it becomes repository policy.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Approve the recorded direction",
-    "body": "Confirm the architecture and manual-cutover decisions, then allow normal proof review to proceed.",
+    "title": "Confirm the recorded direction",
+    "body": "Bobby explicitly approves the documented architecture and manual-cutover policy so normal merge review can proceed.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "Bobby",
-    "reason": "The repository contract names Bobby as the required approval authority.",
+    "reason": "The repository contract specifically names Bobby as the required approval authority.",
     "confidence": "high"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-inventory/items/4.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/4#issuecomment-5404896328",
-    "reviewedAt": "2026-08-25T03:58:30.313Z",
+    "reviewedAt": "2026-08-25T04:05:36.556Z",
     "mainSha": "1a56b2d2c559ac73cfae17b41079751aea7d2897"
   }
 }
