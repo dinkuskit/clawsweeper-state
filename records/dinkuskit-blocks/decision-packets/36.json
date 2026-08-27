@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-27T23:39:23.197Z",
+  "updatedAt": "2026-08-27T23:36:32Z",
+  "subject": {
+    "repo": "dinkuskit/blocks",
+    "kind": "pull_request",
+    "number": 36,
+    "title": "Prove Page Hero as the second feature-local pilot",
+    "url": "https://github.com/dinkuskit/blocks/pull/36",
+    "state": "open",
+    "labels": [
+      "rating: 🦪 silver shellfish",
+      "status: 📣 needs proof",
+      "P3",
+      "merge-risk: 🚨 other"
+    ],
+    "createdAt": "2026-08-27T23:21:25Z",
+    "updatedAt": "2026-08-27T23:36:32Z",
+    "headSha": "2d671b86c0757879cad2b058aa1aa7722e526ed5"
+  },
+  "lane": "product_direction",
+  "priority": "P3",
+  "question": "Should Page Hero become the repository's second feature-local pilot after the contributor narrows the diff to package-owned files and supplies real behavior proof?",
+  "rationale": "This changes the repository's architecture contract, and AGENTS.md reserves approval for this package boundary to Bobby.",
+  "options": [
+    {
+      "title": "Approve the narrowed pilot",
+      "body": "Accept the feature-local Page Hero boundary after removing GrillTrack records and reviewing redacted runtime proof.",
+      "recommended": true
+    },
+    {
+      "title": "Keep Page Hero at its current location",
+      "body": "Decline this architecture expansion while retaining the existing public Page Hero contract.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the narrowed pilot",
+    "body": "Accept the feature-local Page Hero boundary after removing GrillTrack records and reviewing redacted runtime proof.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "Repository policy explicitly assigns approval for merge and package-boundary actions to Bobby.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-blocks/items/36.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/36#issuecomment-5446514173",
+    "reviewedAt": "2026-08-27T23:39:23.197Z",
+    "mainSha": "fcd539aa08fbce708761361832e4ff12fd33a761"
+  }
+}
