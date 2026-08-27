@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-27T23:50:36.043Z",
+  "updatedAt": "2026-08-27T23:48:00Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 4,
+    "title": "ci: repin ClawSweeper to client-id engine",
+    "url": "https://github.com/dinkuskit/commerce/pull/4",
+    "state": "open",
+    "labels": [
+      "rating: 🧂 unranked krab",
+      "status: 📣 needs proof",
+      "P2",
+      "merge-risk: 🚨 auth-provider",
+      "merge-risk: 🚨 automation"
+    ],
+    "createdAt": "2026-08-27T23:47:03Z",
+    "updatedAt": "2026-08-27T23:48:00Z",
+    "headSha": "4ed384556c91b40e184f3514ec85b607d1f68385"
+  },
+  "lane": "security_boundary",
+  "priority": "P2",
+  "question": "Should the repository approve this staged Client ID token-minting rollout before a default-branch canary can provide live evidence?",
+  "rationale": "The changed reusable workflow affects GitHub App authentication, while the only executable caller is sourced from the default branch after merge; AGENTS.md reserves this approval to humans.",
+  "options": [
+    {
+      "title": "Approve a staged canary",
+      "body": "Approve the immutable pin, then require a redacted default-branch canary result before treating the migration as fully validated.",
+      "recommended": true
+    },
+    {
+      "title": "Hold for alternate pre-merge proof",
+      "body": "Keep the PR open until maintainers identify a safe pre-merge environment that can execute the new caller configuration.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve a staged canary",
+    "body": "Approve the immutable pin, then require a redacted default-branch canary result before treating the migration as fully validated.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "dinkuskit",
+    "reason": "The repository's admission tests identify this login as the trusted owner-side actor for this workflow path.",
+    "confidence": "low"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/4.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/4#issuecomment-5446592255",
+    "reviewedAt": "2026-08-27T23:50:36.043Z",
+    "mainSha": "354fc4224966ab1243c93e48e34893c3a2744877"
+  }
+}
