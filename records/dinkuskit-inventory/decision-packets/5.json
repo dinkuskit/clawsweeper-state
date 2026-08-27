@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-27T22:21:54.702Z",
+  "updatedAt": "2026-08-27T22:19:14Z",
+  "subject": {
+    "repo": "dinkuskit/inventory",
+    "kind": "pull_request",
+    "number": 5,
+    "title": "docs: define Inventory client and distribution contracts",
+    "url": "https://github.com/dinkuskit/inventory/pull/5",
+    "state": "open",
+    "labels": [
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P3"
+    ],
+    "createdAt": "2026-08-25T14:30:09Z",
+    "updatedAt": "2026-08-27T22:19:14Z",
+    "headSha": "ad58bc2be3846255822cf1956cdf8bb1290742eb"
+  },
+  "lane": "product_direction",
+  "priority": "P3",
+  "question": "Should the repository merge these Inventory-owned contracts now, including the documented handoff to Commerce and EmDash, before their implementation and compatibility proof are available?",
+  "rationale": "The PR introduces future CLI, provider-selection, and plugin-distribution contracts across products; AGENTS.md reserves product decisions and merge authorization for explicit human approval.",
+  "options": [
+    {
+      "title": "Approve the contract boundary",
+      "body": "Merge the documentation locks as the approved implementation boundary while retaining all runtime and compatibility gates.",
+      "recommended": true
+    },
+    {
+      "title": "Narrow the contracts",
+      "body": "Keep the PR open and remove or defer the Commerce and EmDash commitments until their owning tracks approve them.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the contract boundary",
+    "body": "Merge the documentation locks as the approved implementation boundary while retaining all runtime and compatibility gates.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "They introduced the adjacent merged architecture contract and this follow-up documentation surface.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-inventory/items/5.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/5#issuecomment-5445915240",
+    "reviewedAt": "2026-08-27T22:21:54.702Z",
+    "mainSha": "5a70ad6c4cbb0816c1ba2741e5aa5afe737f1801"
+  }
+}
