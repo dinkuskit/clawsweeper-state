@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-28T13:57:54.350Z",
-  "updatedAt": "2026-08-28T13:54:48Z",
+  "generatedAt": "2026-08-28T14:31:49.703Z",
+  "updatedAt": "2026-08-28T14:28:54Z",
   "subject": {
     "repo": "dinkuskit/commerce",
     "kind": "pull_request",
@@ -10,46 +10,47 @@
     "url": "https://github.com/dinkuskit/commerce/pull/7",
     "state": "open",
     "labels": [
+      "merge-risk: 🚨 compatibility",
       "proof: sufficient",
-      "rating: 🦪 silver shellfish",
+      "rating: 🦐 gold shrimp",
       "status: ⏳ waiting on author",
       "P2",
-      "merge-risk: 🚨 compatibility"
+      "merge-risk: 🚨 security-boundary"
     ],
     "createdAt": "2026-08-28T13:37:24Z",
-    "updatedAt": "2026-08-28T13:54:48Z",
-    "headSha": "bf7986a114cf795abddc6af49112f90d96a5e95b"
+    "updatedAt": "2026-08-28T14:28:54Z",
+    "headSha": "1bf24e19c1179e83a247a972985fea378ccdce8d"
   },
-  "lane": "product_direction",
+  "lane": "security_boundary",
   "priority": "P2",
-  "question": "Should this private catalog pilot wait for an upstream EmDash release and mounted-site proof before it is merged as a supported Commerce integration?",
-  "rationale": "The branch proves storage semantics but documents that the only declared released peer cannot complete the required mounted-site path, so accepting the support baseline requires maintainer intent.",
+  "question": "Should Commerce retain any public reference to a private fork for this pilot, or defer mounted-site support until the upstream fix is released?",
+  "rationale": "The repository policy forbids private repository coordinates, while the proposed contract relies on one for mounted-site runtime behavior.",
   "options": [
     {
-      "title": "Wait for the released runtime fix",
-      "body": "Keep the PR open until EmDash releases the scheduler fix, then update the exact peer version and attach mounted-site proof.",
+      "title": "Wait for the stable upstream release",
+      "body": "Remove the private-fork contract and enable mounted-site support only after a released EmDash version passes the required proof.",
       "recommended": true
     },
     {
-      "title": "Merge as an explicitly unsupported private experiment",
-      "body": "Merge the private pilot without a usable released mounted-site path and defer any support or release commitment until upstream catches up.",
+      "title": "Reject fork-backed mounted-site support",
+      "body": "Keep the storage-only catalog work but exclude mounted-site runtime support until a public supported baseline exists.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Wait for the released runtime fix",
-    "body": "Keep the PR open until EmDash releases the scheduler fix, then update the exact peer version and attach mounted-site proof.",
+    "title": "Wait for the stable upstream release",
+    "body": "Remove the private-fork contract and enable mounted-site support only after a released EmDash version passes the required proof.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "saariuslystoned",
-    "reason": "This contributor authored the catalog contract and its runtime-proof updates, making them the closest available routing candidate for the dependency-baseline decision.",
-    "confidence": "medium"
+    "reason": "They authored the catalog contract and documented the fork-backed runtime boundary.",
+    "confidence": "low"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-commerce/items/7.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/7#issuecomment-5453306869",
-    "reviewedAt": "2026-08-28T13:57:54.350Z",
+    "reviewedAt": "2026-08-28T14:31:49.703Z",
     "mainSha": "c35f611909309dd8d461d99c1d28c563a90d1a0a"
   }
 }
