@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-28T01:23:57.519Z",
+  "updatedAt": "2026-08-28T01:21:11Z",
+  "subject": {
+    "repo": "dinkuskit/blocks",
+    "kind": "pull_request",
+    "number": 37,
+    "title": "test: pin Blocks to EmDash 0.35",
+    "url": "https://github.com/dinkuskit/blocks/pull/37",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2"
+    ],
+    "createdAt": "2026-08-28T00:08:25Z",
+    "updatedAt": "2026-08-28T01:21:11Z",
+    "headSha": "b651f54a7e7a552faf35c3d3af5b9d992b66dea5"
+  },
+  "lane": "manual_review",
+  "priority": "P2",
+  "question": "Does Bobby approve merging this exact EmDash 0.35.0 compatibility baseline under the repository's explicit merge gate?",
+  "rationale": "AGENTS.md reserves merge approval to Bobby, so automated review cannot make this authorization decision.",
+  "options": [
+    {
+      "title": "Approve the compatibility baseline",
+      "body": "Merge the clean PR as the documented private dogfood baseline for exact EmDash 0.35.0.",
+      "recommended": true
+    },
+    {
+      "title": "Defer the baseline",
+      "body": "Leave the PR open until the compatibility or release evidence required for approval is clarified.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the compatibility baseline",
+    "body": "Merge the clean PR as the documented private dogfood baseline for exact EmDash 0.35.0.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "AGENTS.md explicitly assigns merge approval to Bobby.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-blocks/items/37.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/37#issuecomment-5447227315",
+    "reviewedAt": "2026-08-28T01:23:57.519Z",
+    "mainSha": "60a9ec1157336e486cffed8b00183a206b1e03aa"
+  }
+}
