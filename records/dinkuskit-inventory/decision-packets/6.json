@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-28T00:19:32.515Z",
-  "updatedAt": "2026-08-28T00:16:14Z",
+  "generatedAt": "2026-08-28T01:02:57.129Z",
+  "updatedAt": "2026-08-28T01:00:19Z",
   "subject": {
     "repo": "dinkuskit/inventory",
     "kind": "pull_request",
@@ -10,46 +10,47 @@
     "url": "https://github.com/dinkuskit/inventory/pull/6",
     "state": "open",
     "labels": [
-      "rating: 🦪 silver shellfish",
-      "status: 📣 needs proof",
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
       "P2",
       "merge-risk: 🚨 compatibility",
       "merge-risk: 🚨 security-boundary"
     ],
     "createdAt": "2026-08-28T00:08:33Z",
-    "updatedAt": "2026-08-28T00:16:14Z",
-    "headSha": "7d183710a7b2ce183e6545efd39b0417215e8d66"
+    "updatedAt": "2026-08-28T01:00:19Z",
+    "headSha": "84fc6b5e918d88ec81e7b6ada1256d5939eb1e84"
   },
   "lane": "security_boundary",
   "priority": "P2",
-  "question": "Should the scaffold accept the EmDash 0.35 development dependency tree, including lifecycle code executed by npm ci, as an approved development-time supply-chain boundary?",
-  "rationale": "The PR introduces third-party lifecycle execution while asserting that install-script permission did not change; accepting that boundary requires repository-owner judgment.",
+  "question": "Should the repository accept the emdash 0.35 development dependency tree, including lifecycle scripts that other npm policies may execute during npm ci?",
+  "rationale": "The implementation and exact-head proof disclose the behavior, but accepting third-party install-time code is an explicit repository approval boundary rather than a mechanical repair.",
   "options": [
     {
-      "title": "Approve the scoped toolchain after corrections",
-      "body": "Accept the development-only dependency intake after the Node prerequisite, lifecycle statement, and real command proof are corrected.",
+      "title": "Approve the scoped baseline",
+      "body": "Accept the documented development-only dependency tree and its Node >=22.12.0 requirement with the current lifecycle disclosure.",
       "recommended": true
     },
     {
-      "title": "Defer dependency intake",
-      "body": "Keep the charter decision but defer installing EmDash until a fixture plan can avoid or explicitly govern the lifecycle dependency surface.",
+      "title": "Defer the dependency intake",
+      "body": "Keep the scaffold unchanged until maintainers choose a fixture approach with an approved supply-chain boundary.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Approve the scoped toolchain after corrections",
-    "body": "Accept the development-only dependency intake after the Node prerequisite, lifecycle statement, and real command proof are corrected.",
+    "title": "Approve the scoped baseline",
+    "body": "Accept the documented development-only dependency tree and its Node >=22.12.0 requirement with the current lifecycle disclosure.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "Bobby",
-    "reason": "Repository policy explicitly assigns Bobby approval authority for merges and publication-adjacent decisions.",
+    "reason": "Repository policy assigns Bobby the required merge approval for this dependency boundary.",
     "confidence": "high"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-inventory/items/6.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/6#issuecomment-5446791425",
-    "reviewedAt": "2026-08-28T00:19:32.515Z",
+    "reviewedAt": "2026-08-28T01:02:57.129Z",
     "mainSha": "6ebb294e64a1bc2c94f4ba3fd83c6f60b2ab6658"
   }
 }
