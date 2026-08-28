@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-28T13:57:54.350Z",
+  "updatedAt": "2026-08-28T13:54:48Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 7,
+    "title": "feat: add atomic catalog SKU creation",
+    "url": "https://github.com/dinkuskit/commerce/pull/7",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🦪 silver shellfish",
+      "status: ⏳ waiting on author",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-08-28T13:37:24Z",
+    "updatedAt": "2026-08-28T13:54:48Z",
+    "headSha": "bf7986a114cf795abddc6af49112f90d96a5e95b"
+  },
+  "lane": "product_direction",
+  "priority": "P2",
+  "question": "Should this private catalog pilot wait for an upstream EmDash release and mounted-site proof before it is merged as a supported Commerce integration?",
+  "rationale": "The branch proves storage semantics but documents that the only declared released peer cannot complete the required mounted-site path, so accepting the support baseline requires maintainer intent.",
+  "options": [
+    {
+      "title": "Wait for the released runtime fix",
+      "body": "Keep the PR open until EmDash releases the scheduler fix, then update the exact peer version and attach mounted-site proof.",
+      "recommended": true
+    },
+    {
+      "title": "Merge as an explicitly unsupported private experiment",
+      "body": "Merge the private pilot without a usable released mounted-site path and defer any support or release commitment until upstream catches up.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Wait for the released runtime fix",
+    "body": "Keep the PR open until EmDash releases the scheduler fix, then update the exact peer version and attach mounted-site proof.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "This contributor authored the catalog contract and its runtime-proof updates, making them the closest available routing candidate for the dependency-baseline decision.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/7.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/7#issuecomment-5453306869",
+    "reviewedAt": "2026-08-28T13:57:54.350Z",
+    "mainSha": "c35f611909309dd8d461d99c1d28c563a90d1a0a"
+  }
+}
