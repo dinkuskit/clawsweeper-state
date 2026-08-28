@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-28T19:19:21.341Z",
+  "updatedAt": "2026-08-28T19:11:57Z",
+  "subject": {
+    "repo": "dinkuskit/inventory",
+    "kind": "pull_request",
+    "number": 10,
+    "title": "feat: add location-scoped history and location registry",
+    "url": "https://github.com/dinkuskit/inventory/pull/10",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🦐 gold shrimp",
+      "status: ⏳ waiting on author",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-08-28T16:29:43Z",
+    "updatedAt": "2026-08-28T19:11:57Z",
+    "headSha": "d85507e938345ce3f28519b935a589bfada8d69b"
+  },
+  "lane": "product_direction",
+  "priority": "P2",
+  "question": "Should existing `dinkuskit.inventory.command/v1` opening-balance clients remain compatible via the default reason note, or is rejection of prior note-less v1 payloads intentionally approved?",
+  "rationale": "The charter locks the new human-facing reason requirement but does not state a compatibility policy for already-valid v1 payloads.",
+  "options": [
+    {
+      "title": "Preserve v1 compatibility",
+      "body": "Accept a missing v1 `reason.note` as the documented default while requiring explicit editable text in new human-facing flows.",
+      "recommended": true
+    },
+    {
+      "title": "Version the break",
+      "body": "Introduce a new command schema/version and document the migration if note-less v1 payloads must be rejected.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Preserve v1 compatibility",
+    "body": "Accept a missing v1 `reason.note` as the documented default while requiring explicit editable text in new human-facing flows.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "Repository policy identifies Bobby as the authority for product locks and approval boundaries.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-inventory/items/10.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/10#issuecomment-5456159246",
+    "reviewedAt": "2026-08-28T19:19:21.341Z",
+    "mainSha": "ea8583131aae4ba63510b92b37cbcb94dff587c4"
+  }
+}
