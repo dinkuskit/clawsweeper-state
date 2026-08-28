@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-28T15:14:44.003Z",
+  "updatedAt": "2026-08-28T15:11:31Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 7,
+    "title": "feat: add atomic catalog SKU creation",
+    "url": "https://github.com/dinkuskit/commerce/pull/7",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2"
+    ],
+    "createdAt": "2026-08-28T13:37:24Z",
+    "updatedAt": "2026-08-28T15:11:31Z",
+    "headSha": "bdc1bf294185eca23e5c9dfbd935564f9479972d"
+  },
+  "lane": "manual_review",
+  "priority": "P2",
+  "question": "Should a human approve merging this bounded private catalog pilot while retaining the documented stable-EmDash release gate for mounted-site writes?",
+  "rationale": "Repository policy reserves merges for explicit human approval, and this new feature introduces the first catalog write boundary despite its bounded pilot status.",
+  "options": [
+    {
+      "title": "Approve the bounded pilot",
+      "body": "Merge the private pilot while retaining its stock-EmDash fail-closed behavior and stable-release proof gate.",
+      "recommended": true
+    },
+    {
+      "title": "Defer the pilot",
+      "body": "Keep the branch open until maintainers want to adopt the catalog creation boundary or upstream EmDash support matures.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the bounded pilot",
+    "body": "Merge the private pilot while retaining its stock-EmDash fail-closed behavior and stable-release proof gate.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "They are the available feature-history routing candidate for the catalog implementation and its documented runtime dependency.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/7.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/7#issuecomment-5453306869",
+    "reviewedAt": "2026-08-28T15:14:44.003Z",
+    "mainSha": "c35f611909309dd8d461d99c1d28c563a90d1a0a"
+  }
+}
