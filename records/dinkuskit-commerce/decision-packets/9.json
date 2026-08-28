@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-28T22:01:37.224Z",
-  "updatedAt": "2026-08-28T21:58:36Z",
+  "generatedAt": "2026-08-28T22:11:46.008Z",
+  "updatedAt": "2026-08-28T22:09:13Z",
   "subject": {
     "repo": "dinkuskit/commerce",
     "kind": "pull_request",
@@ -10,45 +10,46 @@
     "url": "https://github.com/dinkuskit/commerce/pull/9",
     "state": "open",
     "labels": [
+      "proof: sufficient",
       "rating: 🦪 silver shellfish",
-      "status: 📣 needs proof",
-      "P2",
+      "status: ⏳ waiting on author",
+      "P1",
       "merge-risk: 🚨 compatibility"
     ],
     "createdAt": "2026-08-28T21:52:20Z",
-    "updatedAt": "2026-08-28T21:58:36Z",
-    "headSha": "5ae910430683aaac4f342ca2809ef145dc34ddf8"
+    "updatedAt": "2026-08-28T22:09:13Z",
+    "headSha": "8198a59524f384cdd69a6de0b0e9e22801edaae0"
   },
   "lane": "product_direction",
-  "priority": "P2",
-  "question": "Should Commerce make this provider-neutral registration port and identity-bearing StockManagement union its accepted pre-release public contract?",
-  "rationale": "The branch introduces a public provider API and changes the persisted state union; repository policy reserves product decisions and merges for explicit human approval.",
+  "priority": "P1",
+  "question": "How should pre-existing persisted managed active records with no Inventory SKU identity behave after this contract lands?",
+  "rationale": "The new invariant forbids active state without an identity, but the prior persisted representation cannot supply one; choosing reset, migration, or an alternate compatibility representation is product and upgrade policy.",
   "options": [
     {
-      "title": "Approve the bounded contract",
-      "body": "Accept the pre-release API after reviewing a redacted built-runtime transcript and retain the documented no-transport boundary.",
+      "title": "Downgrade legacy active records",
+      "body": "On read or migration, convert legacy active records without an identity to setup-required and require a fresh explicit registration.",
       "recommended": true
     },
     {
-      "title": "Keep the contract internal",
-      "body": "Defer public exports until the Inventory adapter and upgrade boundary are ready for a stable contract.",
+      "title": "Preserve a legacy representation",
+      "body": "Retain a documented legacy active state until a later migration can establish an Inventory identity.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Approve the bounded contract",
-    "body": "Accept the pre-release API after reviewing a redacted built-runtime transcript and retain the documented no-transport boundary.",
+    "title": "Downgrade legacy active records",
+    "body": "On read or migration, convert legacy active records without an identity to setup-required and require a fresh explicit registration.",
     "recommended": true
   },
   "likelyOwner": {
-    "person": "saariuslystoned",
-    "reason": "The available evidence connects this contributor to the current inventory-provider contract, though confirmation from a repository merge approver is still required.",
-    "confidence": "low"
+    "person": "dinkuskit",
+    "reason": "The repository owner is cited as having approved the new pre-release contract and is best placed to set its upgrade policy.",
+    "confidence": "medium"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-commerce/items/9.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/9#issuecomment-5458226387",
-    "reviewedAt": "2026-08-28T22:01:37.224Z",
+    "reviewedAt": "2026-08-28T22:11:46.008Z",
     "mainSha": "efd4832aac20080bd983028ad9dd4b2220e2ad9b"
   }
 }
