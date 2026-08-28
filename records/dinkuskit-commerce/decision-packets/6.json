@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-28T00:19:11.794Z",
+  "updatedAt": "2026-08-28T00:16:14Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 6,
+    "title": "chore: pin Commerce scaffold to EmDash 0.35",
+    "url": "https://github.com/dinkuskit/commerce/pull/6",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P3"
+    ],
+    "createdAt": "2026-08-28T00:08:29Z",
+    "updatedAt": "2026-08-28T00:16:14Z",
+    "headSha": "1c52fd8b3608d5e056dc5848e14ca2fddeced718"
+  },
+  "lane": "manual_review",
+  "priority": "P3",
+  "question": "Does the repository owner approve adding the EmDash 0.35 development baseline and its lockfile to the charter-stage scaffold?",
+  "rationale": "AGENTS.md explicitly reserves merges for human approval, while this review found no mechanical defect for an automated repair lane.",
+  "options": [
+    {
+      "title": "Approve the baseline",
+      "body": "Accept the bounded development-only dependency pin, lockfile, and installed-state audit exclusion as submitted.",
+      "recommended": true
+    },
+    {
+      "title": "Decline or narrow the baseline",
+      "body": "Keep the scaffold dependency-free or request a smaller alternative if the project does not want the EmDash toolchain committed yet.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the baseline",
+    "body": "Accept the bounded development-only dependency pin, lockfile, and installed-state audit exclusion as submitted.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "dinkuskit",
+    "reason": "The repository policy assigns the required merge approval to a human project owner.",
+    "confidence": "low"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/6.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/6#issuecomment-5446786449",
+    "reviewedAt": "2026-08-28T00:19:11.794Z",
+    "mainSha": "cf203edcd6b3c2ae58ee8415d80e02a5caf21060"
+  }
+}
