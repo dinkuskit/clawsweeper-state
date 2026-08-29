@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-29T16:36:09.139Z",
+  "updatedAt": "2026-08-29T16:33:46Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 12,
+    "title": "feat: make managed SKU registration claims atomic",
+    "url": "https://github.com/dinkuskit/commerce/pull/12",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-08-29T16:05:52Z",
+    "updatedAt": "2026-08-29T16:33:46Z",
+    "headSha": "7be9848abb55bf9ef583d0ea4830f6d516388b0c"
+  },
+  "lane": "product_direction",
+  "priority": "P2",
+  "question": "Should Commerce permanently expose the ManagedSkuRegistrationClaimPort and managedSkuClaims storage collection as the public atomic-registration contract?",
+  "rationale": "The implementation changes the plugin's supported API and stored model; that boundary cannot be selected from test results alone.",
+  "options": [
+    {
+      "title": "Approve the claim contract",
+      "body": "Accept the provider-neutral claim port and additive collection as the supported Commerce boundary, then merge subject to normal checks.",
+      "recommended": true
+    },
+    {
+      "title": "Narrow or internalize it",
+      "body": "Define a smaller or non-exported integration boundary before this capability lands.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the claim contract",
+    "body": "Accept the provider-neutral claim port and additive collection as the supported Commerce boundary, then merge subject to normal checks.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "The available feature-history evidence most directly connects this contributor to the preceding and proposed registration-contract lineage.",
+    "confidence": "low"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/12.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/12#issuecomment-5463516549",
+    "reviewedAt": "2026-08-29T16:36:09.139Z",
+    "mainSha": "4d8cd830d4aed625db54c2a79aaba3fbc75fe15a"
+  }
+}
