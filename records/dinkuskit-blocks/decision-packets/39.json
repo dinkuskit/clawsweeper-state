@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-29T02:48:01.945Z",
+  "updatedAt": "2026-08-29T02:40:56Z",
+  "subject": {
+    "repo": "dinkuskit/blocks",
+    "kind": "pull_request",
+    "number": 39,
+    "title": "Document current EmDash 0.35 baseline and visual-editing limitation",
+    "url": "https://github.com/dinkuskit/blocks/pull/39",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P3"
+    ],
+    "createdAt": "2026-08-28T21:51:58Z",
+    "updatedAt": "2026-08-29T02:40:56Z",
+    "headSha": "5d4ecd5803c045fd61188c70c4586babecebfda9"
+  },
+  "lane": "manual_review",
+  "priority": "P3",
+  "question": "Should Bobby manually close this branch as already represented by the current baseline, or merge it as the preferred provenance for that documentation and helper cleanup?",
+  "rationale": "The repository policy requires Bobby's explicit merge approval and prohibits automated closure, while the current baseline visibly contains the same documented fallback and helper outcome.",
+  "options": [
+    {
+      "title": "Manually close as represented on main",
+      "body": "Close this PR manually after confirming the current baseline is the intended provenance for the README and helper behavior.",
+      "recommended": true
+    },
+    {
+      "title": "Merge as the retained provenance",
+      "body": "Merge this clean branch if its commits should remain the explicit review record for the baseline documentation and test cleanup.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Manually close as represented on main",
+    "body": "Close this PR manually after confirming the current baseline is the intended provenance for the README and helper behavior.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "AGENTS.md identifies Bobby as the explicit approval authority for merge actions.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-blocks/items/39.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/39#issuecomment-5459877753",
+    "reviewedAt": "2026-08-29T02:48:01.945Z",
+    "mainSha": "82a31183cc06ae0fc5b4829f5a8875753ecde10a"
+  }
+}
