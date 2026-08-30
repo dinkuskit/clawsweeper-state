@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-30T20:33:58.436Z",
+  "updatedAt": "2026-08-30T20:31:17Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 15,
+    "title": "Add managed storefront availability policy",
+    "url": "https://github.com/dinkuskit/commerce/pull/15",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-08-30T20:28:58Z",
+    "updatedAt": "2026-08-30T20:31:17Z",
+    "headSha": "726eeb3cbce5816500f558b5c8a6523a3df352b2"
+  },
+  "lane": "product_direction",
+  "priority": "P2",
+  "question": "Should Commerce adopt the proposed public storefront-availability resolver and authenticated policy routes as its next supported contract?",
+  "rationale": "The implementation adds durable settings and exported plugin APIs; source compatibility alone cannot establish whether this is the desired permanent product surface.",
+  "options": [
+    {
+      "title": "Adopt the scoped contract",
+      "body": "Accept the resolver, policies, and authenticated routes as the supported Commerce availability API while retaining the documented deferred UI and transport work.",
+      "recommended": true
+    },
+    {
+      "title": "Narrow before adoption",
+      "body": "Keep the implementation private or reduce the public API until the desired storefront integration boundary is decided.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Adopt the scoped contract",
+    "body": "Accept the resolver, policies, and authenticated routes as the supported Commerce availability API while retaining the documented deferred UI and transport work.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "The available feature lineage ties this contributor to the adjacent managed-inventory work and the proposed availability contract.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/15.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/15#issuecomment-5471109086",
+    "reviewedAt": "2026-08-30T20:33:58.436Z",
+    "mainSha": "530348c07769a010b0fa4ef24604292a4254eda0"
+  }
+}
