@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-30T21:35:23.282Z",
+  "updatedAt": "2026-08-30T21:32:36Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 16,
+    "title": "feat: add unmanaged product sellability",
+    "url": "https://github.com/dinkuskit/commerce/pull/16",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2"
+    ],
+    "createdAt": "2026-08-30T21:30:33Z",
+    "updatedAt": "2026-08-30T21:32:36Z",
+    "headSha": "c66eab409a59657ddfb7b1fa7429b2339b123ea0"
+  },
+  "lane": "manual_review",
+  "priority": "P2",
+  "question": "Should a repository approver accept this backend-only sellability slice with its documented UI, persisted-toggle, and checkout deferrals?",
+  "rationale": "Repository policy requires explicit human approval for merges, and this feature intentionally establishes the boundary of later transactional work.",
+  "options": [
+    {
+      "title": "Approve the bounded backend slice",
+      "body": "Merge the isolated manual-availability and resolver contract while leaving the documented deferred surfaces for focused future work.",
+      "recommended": true
+    },
+    {
+      "title": "Defer pending broader workflow scope",
+      "body": "Keep the PR open if the project requires an EmDash control, persisted Manage Stock mutation, or checkout enforcement in the same delivery.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the bounded backend slice",
+    "body": "Merge the isolated manual-availability and resolver contract while leaving the documented deferred surfaces for focused future work.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "They are the only identified contributor with exact-head implementation and proof context; a repository approver must make the final merge decision.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/16.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/16#issuecomment-5471406218",
+    "reviewedAt": "2026-08-30T21:35:23.282Z",
+    "mainSha": "94c9c314686807ac43ac63d0c66671f57e259453"
+  }
+}
