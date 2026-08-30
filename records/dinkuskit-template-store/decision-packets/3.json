@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-30T18:39:18.960Z",
+  "updatedAt": "2026-08-30T18:36:47Z",
+  "subject": {
+    "repo": "dinkuskit/template-store",
+    "kind": "pull_request",
+    "number": 3,
+    "title": "feat: prove Blocks, Commerce, and Inventory together",
+    "url": "https://github.com/dinkuskit/template-store/pull/3",
+    "state": "open",
+    "labels": [
+      "rating: 🦪 silver shellfish",
+      "status: 📣 needs proof",
+      "P2"
+    ],
+    "createdAt": "2026-08-30T18:29:14Z",
+    "updatedAt": "2026-08-30T18:36:47Z",
+    "headSha": "72f01198d6c579f769f510ec5ec321ceb56c14c6"
+  },
+  "lane": "product_direction",
+  "priority": "P2",
+  "question": "Should this repository adopt the proposed pre-release source-alias integration and local proof-adapter model as its supported starter direction?",
+  "rationale": "The change establishes the repository's central integration architecture and relies on exact pre-release source pins, so implementation correctness alone cannot determine whether this should become the maintained product boundary.",
+  "options": [
+    {
+      "title": "Sponsor the bounded pilot",
+      "body": "Accept the pinned, disposable proof-only integration as the starter direction once inspectable final-head behavior evidence is attached.",
+      "recommended": true
+    },
+    {
+      "title": "Narrow to documentation or scaffolding",
+      "body": "Keep only the neutral starter structure until the upstream Commerce and Inventory packages have supported installable releases.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Sponsor the bounded pilot",
+    "body": "Accept the pinned, disposable proof-only integration as the starter direction once inspectable final-head behavior evidence is attached.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "This contributor introduced the current pilot and is the only concrete routing candidate in the admitted history.",
+    "confidence": "low"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-template-store/items/3.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/template-store/pull/3#issuecomment-5470547358",
+    "reviewedAt": "2026-08-30T18:39:18.960Z",
+    "mainSha": "93c6991af4b433877d5bf252e059822e45562662"
+  }
+}
