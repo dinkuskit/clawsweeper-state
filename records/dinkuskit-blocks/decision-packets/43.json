@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-30T20:07:50.125Z",
-  "updatedAt": "2026-08-30T19:55:58Z",
+  "generatedAt": "2026-08-30T21:28:43.668Z",
+  "updatedAt": "2026-08-30T21:16:47Z",
   "subject": {
     "repo": "dinkuskit/blocks",
     "kind": "pull_request",
@@ -12,44 +12,44 @@
     "labels": [
       "proof: sufficient",
       "proof: 📸 screenshot",
-      "rating: 🦐 gold shrimp",
-      "status: ⏳ waiting on author",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
       "P3"
     ],
     "createdAt": "2026-08-30T14:51:06Z",
-    "updatedAt": "2026-08-30T19:55:58Z",
-    "headSha": "b6ec896542c5dd1bb15a79d6427fe2005e6a2da2"
+    "updatedAt": "2026-08-30T21:16:47Z",
+    "headSha": "7500de57302b255ccd5370abbacd7ec8cae3e371"
   },
   "lane": "manual_review",
   "priority": "P3",
-  "question": "After the proof record is corrected, does Bobby explicitly approve merging this behavior-preserving Section Header migration?",
-  "rationale": "AGENTS.md reserves merges to Bobby's explicit approval, which cannot be inferred from automated review evidence.",
+  "question": "Does Bobby explicitly approve merging this behavior-preserving Section Header migration at the current head?",
+  "rationale": "AGENTS.md reserves merges to Bobby's explicit approval, which automated evidence cannot supply.",
   "options": [
     {
-      "title": "Approve after proof correction",
-      "body": "Approve once the retained proof permanently identifies both immutable assets and the final source revision.",
+      "title": "Approve the current head",
+      "body": "Approve merging the current head, which preserves the established public contract and now carries immutable behavior proof.",
       "recommended": true
     },
     {
-      "title": "Defer approval",
-      "body": "Keep the PR open if further owner review of the migration boundary is desired.",
+      "title": "Hold for further review",
+      "body": "Keep the PR open if additional owner review of the feature-boundary migration is desired.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Approve after proof correction",
-    "body": "Approve once the retained proof permanently identifies both immutable assets and the final source revision.",
+    "title": "Approve the current head",
+    "body": "Approve merging the current head, which preserves the established public contract and now carries immutable behavior proof.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "Bobby",
-    "reason": "AGENTS.md names Bobby as the authority required to approve merges.",
+    "reason": "AGENTS.md identifies Bobby as the required merge approver.",
     "confidence": "high"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-blocks/items/43.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/43#issuecomment-5470335383",
-    "reviewedAt": "2026-08-30T20:07:50.125Z",
+    "reviewedAt": "2026-08-30T21:28:43.668Z",
     "mainSha": "7725b255f58f885d675480607c0326cf28d7f23a"
   }
 }
