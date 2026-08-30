@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-30T22:38:56.571Z",
+  "updatedAt": "2026-08-30T22:36:37Z",
+  "subject": {
+    "repo": "dinkuskit/inventory",
+    "kind": "pull_request",
+    "number": 19,
+    "title": "Add stock transfer list read model",
+    "url": "https://github.com/dinkuskit/inventory/pull/19",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2"
+    ],
+    "createdAt": "2026-08-30T22:27:56Z",
+    "updatedAt": "2026-08-30T22:36:37Z",
+    "headSha": "d6cad6dce760d5ccec3030be6a885cd7fbbbac82"
+  },
+  "lane": "manual_review",
+  "priority": "P2",
+  "question": "Does Bobby explicitly approve merging this locked stock-transfer list read-model implementation?",
+  "rationale": "AGENTS.md reserves merge authorization to Bobby, and that authorization cannot be inferred from automated review evidence.",
+  "options": [
+    {
+      "title": "Approve merge",
+      "body": "Authorize merge of the contract-aligned, proof-backed additive read-model slice.",
+      "recommended": true
+    },
+    {
+      "title": "Keep deferred",
+      "body": "Leave the PR open until the feature should be included in the next approved Inventory delivery.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve merge",
+    "body": "Authorize merge of the contract-aligned, proof-backed additive read-model slice.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "The repository policy names Bobby as the required approver for merges.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-inventory/items/19.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/19#issuecomment-5471704007",
+    "reviewedAt": "2026-08-30T22:38:56.571Z",
+    "mainSha": "ff6dd9de3841dd95965849c1b0221b1551929656"
+  }
+}
