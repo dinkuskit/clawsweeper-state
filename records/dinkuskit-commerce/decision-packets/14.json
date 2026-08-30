@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-30T18:43:48.400Z",
+  "updatedAt": "2026-08-30T18:41:18Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 14,
+    "title": "Add the provider-neutral Configure Inventory action",
+    "url": "https://github.com/dinkuskit/commerce/pull/14",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-08-30T18:35:44Z",
+    "updatedAt": "2026-08-30T18:41:18Z",
+    "headSha": "a4ac5b0207b9a6261b040e71766a9de620b67408"
+  },
+  "lane": "product_direction",
+  "priority": "P2",
+  "question": "Should Commerce expose and persist this provider-neutral inventory-setup contract now, including the public createPlugin inventorySetup resolver and deferred provider/pool migration behavior?",
+  "rationale": "The patch is a new durable product and plugin API surface, and the repository policy reserves merge and product decisions for explicit human approval.",
+  "options": [
+    {
+      "title": "Approve the bounded configuration contract",
+      "body": "Land the provider-neutral configuration surface with its fail-closed behavior and defer provider/pool migration until its complete stack has proof.",
+      "recommended": true
+    },
+    {
+      "title": "Keep configuration internal for now",
+      "body": "Defer the public resolver and persistent configuration API until a host integration and migration contract are explicitly designed.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the bounded configuration contract",
+    "body": "Land the provider-neutral configuration surface with its fail-closed behavior and defer provider/pool migration until its complete stack has proof.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "The admitted history identifies this contributor as the only person directly connected to the proposed inventory-setup contract, though final merge authority remains a human approval.",
+    "confidence": "low"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/14.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/14#issuecomment-5470568849",
+    "reviewedAt": "2026-08-30T18:43:48.400Z",
+    "mainSha": "9fd24c6a13a4a4d332109e2d4541b05ec5f83786"
+  }
+}
