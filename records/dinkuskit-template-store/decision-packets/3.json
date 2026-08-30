@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-30T18:39:18.960Z",
-  "updatedAt": "2026-08-30T18:36:47Z",
+  "generatedAt": "2026-08-30T18:51:39.215Z",
+  "updatedAt": "2026-08-30T18:49:24Z",
   "subject": {
     "repo": "dinkuskit/template-store",
     "kind": "pull_request",
@@ -10,44 +10,47 @@
     "url": "https://github.com/dinkuskit/template-store/pull/3",
     "state": "open",
     "labels": [
-      "rating: 🦪 silver shellfish",
-      "status: 📣 needs proof",
-      "P2"
+      "proof: sufficient",
+      "proof: 📸 screenshot",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2",
+      "merge-risk: 🚨 compatibility"
     ],
     "createdAt": "2026-08-30T18:29:14Z",
-    "updatedAt": "2026-08-30T18:36:47Z",
+    "updatedAt": "2026-08-30T18:49:24Z",
     "headSha": "72f01198d6c579f769f510ec5ec321ceb56c14c6"
   },
   "lane": "product_direction",
   "priority": "P2",
-  "question": "Should this repository adopt the proposed pre-release source-alias integration and local proof-adapter model as its supported starter direction?",
-  "rationale": "The change establishes the repository's central integration architecture and relies on exact pre-release source pins, so implementation correctness alone cannot determine whether this should become the maintained product boundary.",
+  "question": "Should this starter support the exact pre-release source aliases and disposable proof adapter as a bounded pilot, or remain documentation/scaffolding until installable dependencies exist?",
+  "rationale": "The implementation deliberately creates a starter-level dependency and support contract that source validation cannot decide.",
   "options": [
     {
       "title": "Sponsor the bounded pilot",
-      "body": "Accept the pinned, disposable proof-only integration as the starter direction once inspectable final-head behavior evidence is attached.",
+      "body": "Accept the exact pins and proof-only adapter with their temporary, non-production boundaries documented as the starter's current pilot contract.",
       "recommended": true
     },
     {
-      "title": "Narrow to documentation or scaffolding",
-      "body": "Keep only the neutral starter structure until the upstream Commerce and Inventory packages have supported installable releases.",
+      "title": "Narrow to scaffolding",
+      "body": "Retain documentation and feature structure but defer live Commerce and Inventory wiring until installable releases establish a supported dependency path.",
       "recommended": false
     }
   ],
   "recommendation": {
     "title": "Sponsor the bounded pilot",
-    "body": "Accept the pinned, disposable proof-only integration as the starter direction once inspectable final-head behavior evidence is attached.",
+    "body": "Accept the exact pins and proof-only adapter with their temporary, non-production boundaries documented as the starter's current pilot contract.",
     "recommended": true
   },
   "likelyOwner": {
-    "person": "saariuslystoned",
-    "reason": "This contributor introduced the current pilot and is the only concrete routing candidate in the admitted history.",
-    "confidence": "low"
+    "person": "dinkuskit",
+    "reason": "The repository owner defines the starter's product and release boundary.",
+    "confidence": "medium"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-template-store/items/3.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/template-store/pull/3#issuecomment-5470547358",
-    "reviewedAt": "2026-08-30T18:39:18.960Z",
+    "reviewedAt": "2026-08-30T18:51:39.215Z",
     "mainSha": "93c6991af4b433877d5bf252e059822e45562662"
   }
 }
