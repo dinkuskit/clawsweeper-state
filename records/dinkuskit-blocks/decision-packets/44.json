@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-31T23:36:49.395Z",
+  "updatedAt": "2026-08-31T23:24:37Z",
+  "subject": {
+    "repo": "dinkuskit/blocks",
+    "kind": "pull_request",
+    "number": 44,
+    "title": "Document automated review delivery",
+    "url": "https://github.com/dinkuskit/blocks/pull/44",
+    "state": "open",
+    "labels": [
+      "rating: 🦐 gold shrimp",
+      "status: ⏳ waiting on author",
+      "P2"
+    ],
+    "createdAt": "2026-08-31T23:24:37Z",
+    "updatedAt": "2026-08-31T23:24:37Z",
+    "headSha": "6e1ccaffc9171a427452720a436aae8e91a80c86"
+  },
+  "lane": "merge_risk",
+  "priority": "P2",
+  "question": "Should exact-head CI success become an enforced admission requirement, or should AGENTS.md describe it only as a maintainer process prerequisite?",
+  "rationale": "The PR presents CI-first ordering as a required contract, while the checked-in admission implementation does not enforce it; choosing between documentation correction and workflow enforcement changes the intended operational guarantee.",
+  "options": [
+    {
+      "title": "Enforce the CI gate",
+      "body": "Require a successful CI result for the exact PR head before review dispatch and add focused coverage for successful, pending, and failing states.",
+      "recommended": true
+    },
+    {
+      "title": "Document the current process",
+      "body": "Keep the command-trigger behavior and rewrite the section so it does not claim that CI-first ordering is automatically enforced.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Enforce the CI gate",
+    "body": "Require a successful CI result for the exact PR head before review dispatch and add focused coverage for successful, pending, and failing states.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "The existing repository contract assigns explicit merge authority to Bobby and the choice defines review policy.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-blocks/items/44.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/44#issuecomment-5486301292",
+    "reviewedAt": "2026-08-31T23:36:49.395Z",
+    "mainSha": "d6703543a6d94e531d75294406d8c3661a42ed59"
+  }
+}
