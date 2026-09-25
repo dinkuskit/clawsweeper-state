@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-25T21:25:12.646Z",
+  "updatedAt": "2026-09-25T21:22:36Z",
+  "subject": {
+    "repo": "dinkuskit/blocks",
+    "kind": "pull_request",
+    "number": 50,
+    "title": "Pin blocks to exact EmDash 0.40.1",
+    "url": "https://github.com/dinkuskit/blocks/pull/50",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-25T21:09:05Z",
+    "updatedAt": "2026-09-25T21:22:36Z",
+    "headSha": "ccf111b948e6eaf7739256d4cc6d9ed3b18839fd"
+  },
+  "lane": "merge_risk",
+  "priority": "P2",
+  "question": "Does Bobby explicitly approve merging the tested exact EmDash 0.40.1 compatibility baseline?",
+  "rationale": "AGENTS.md reserves merge approval for Bobby, and this PR changes the package's supported pre-1.0 peer baseline.",
+  "options": [
+    {
+      "title": "Approve the tested baseline",
+      "body": "Approve merging the exact 0.40.1 pin based on the retained E2E, fixture, and CI evidence.",
+      "recommended": true
+    },
+    {
+      "title": "Hold for further compatibility review",
+      "body": "Keep the PR open until additional review of the upstream 0.40.1 upgrade is complete.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the tested baseline",
+    "body": "Approve merging the exact 0.40.1 pin based on the retained E2E, fixture, and CI evidence.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "The repository merge gate explicitly assigns merge approval to Bobby.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-blocks/items/50.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/50#issuecomment-5839657561",
+    "reviewedAt": "2026-09-25T21:25:12.646Z",
+    "mainSha": "c33fb51f89783082b7bc5ff7161959d350d95f06"
+  }
+}
