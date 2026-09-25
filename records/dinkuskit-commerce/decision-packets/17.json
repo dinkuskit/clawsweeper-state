@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-25T18:26:27.129Z",
+  "updatedAt": "2026-09-25T18:23:16Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 17,
+    "title": "feat: persist the Manage Stock toggle both ways",
+    "url": "https://github.com/dinkuskit/commerce/pull/17",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🦪 silver shellfish",
+      "status: ⏳ waiting on author",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-25T18:21:08Z",
+    "updatedAt": "2026-09-25T18:23:16Z",
+    "headSha": "0ecc15225255b0fc1ad431df5a7213c8829dfad7"
+  },
+  "lane": "merge_risk",
+  "priority": "P2",
+  "question": "Which storage-backed atomicity mechanism should this pilot use to ensure an explicit Manage Stock disable cannot be overwritten or partially completed?",
+  "rationale": "The required guarantee spans a catalog record and registration claims; the current collection API exposes only independent reads, writes, queries, and deletes, so choosing the durable mechanism requires maintainer judgment.",
+  "options": [
+    {
+      "title": "Add an atomic persistence primitive",
+      "body": "Adopt a transaction or compare-and-swap mechanism that commits the toggle and guards Configure Inventory against the same revision.",
+      "recommended": true
+    },
+    {
+      "title": "Narrow the feature until atomicity exists",
+      "body": "Defer claim release and concurrent Configure Inventory support until the storage layer provides a durable conditional-write contract.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Add an atomic persistence primitive",
+    "body": "Adopt a transaction or compare-and-swap mechanism that commits the toggle and guards Configure Inventory against the same revision.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "The submitted implementation and proof cover the affected catalog and inventory paths.",
+    "confidence": "low"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/17.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/17#issuecomment-5837468316",
+    "reviewedAt": "2026-09-25T18:26:27.129Z",
+    "mainSha": "8ca3e5dd14264df6db21bf4bee778158b0357bd2"
+  }
+}
