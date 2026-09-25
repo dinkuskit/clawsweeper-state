@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-25T22:02:42.301Z",
+  "updatedAt": "2026-09-25T21:59:43Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 19,
+    "title": "feat: persist Regular and Sale as Commerce-owned Money",
+    "url": "https://github.com/dinkuskit/commerce/pull/19",
+    "state": "open",
+    "labels": [
+      "rating: 🦪 silver shellfish",
+      "status: 📣 needs proof",
+      "P1",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-25T21:59:30Z",
+    "updatedAt": "2026-09-25T21:59:43Z",
+    "headSha": "acda59b1bcf9a40e366ed87c1e65cee1ff7bd1fc"
+  },
+  "lane": "product_direction",
+  "priority": "P1",
+  "question": "Should absent price rows immediately deactivate existing catalog products, or should legacy availability remain until price data is explicitly migrated or opted in?",
+  "rationale": "The new collection contains no price rows for existing products, while the required Regular value cannot be inferred safely; choosing either availability behavior changes the Commerce product contract.",
+  "options": [
+    {
+      "title": "Stage the price gate",
+      "body": "Keep legacy products available until an explicit migration or approved rollout condition marks them price-managed.",
+      "recommended": true
+    },
+    {
+      "title": "Approve immediate de-listing",
+      "body": "Accept that all catalog products without a Regular price become unavailable at upgrade and document the required operator remediation.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Stage the price gate",
+    "body": "Keep legacy products available until an explicit migration or approved rollout condition marks them price-managed.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "They authored the proposed price and listability boundary and are the only evidenced participant connected to this new surface.",
+    "confidence": "low"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/19.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/19#issuecomment-5840292653",
+    "reviewedAt": "2026-09-25T22:02:42.301Z",
+    "mainSha": "b9e432b1869bae09e394f5d631aa97b6949bf2fd"
+  }
+}
