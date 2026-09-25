@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-25T20:19:33.711Z",
-  "updatedAt": "2026-09-25T20:17:11Z",
+  "generatedAt": "2026-09-25T21:00:53.690Z",
+  "updatedAt": "2026-09-25T20:58:22Z",
   "subject": {
     "repo": "dinkuskit/inventory",
     "kind": "pull_request",
@@ -10,45 +10,46 @@
     "url": "https://github.com/dinkuskit/inventory/pull/20",
     "state": "open",
     "labels": [
-      "rating: 🧂 unranked krab",
-      "status: 📣 needs proof",
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
       "P2",
       "merge-risk: 🚨 compatibility"
     ],
     "createdAt": "2026-09-25T20:11:14Z",
-    "updatedAt": "2026-09-25T20:17:11Z",
-    "headSha": "ef78d0297d9bce5e5d5a4553171fa92dc21dfa17"
+    "updatedAt": "2026-09-25T20:58:22Z",
+    "headSha": "a1f6aac10a0aa6d702b3c45ef5385a4fd488d93c"
   },
   "lane": "product_direction",
   "priority": "P2",
-  "question": "Should Dinkuskit Inventory accept durable named order reservations as a core API and schema-v5 capability?",
-  "rationale": "This PR introduces a new persistent public command surface, and AGENTS.md requires Bobby's explicit approval before merge.",
+  "question": "Does Bobby explicitly approve adding durable named order reservations and schema v5 as core Inventory functionality?",
+  "rationale": "Repository policy reserves merge approval for Bobby, and this PR introduces a new persistent public command surface rather than a narrow repair.",
   "options": [
     {
-      "title": "Approve the reservation kernel scope",
-      "body": "Confirm that named reservations belong in the core ledger, then require the outstanding runtime proof before merge.",
+      "title": "Approve the locked reservation kernel",
+      "body": "Bobby confirms this scoped core capability, allowing the reviewed branch to proceed through normal merge checks.",
       "recommended": true
     },
     {
       "title": "Defer the persistent API",
-      "body": "Keep the PR open but do not merge until the product boundary and long-term reservation contract are approved.",
+      "body": "Keep the PR open while the repository retains the current inventory boundary and decides a later reservation direction.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Approve the reservation kernel scope",
-    "body": "Confirm that named reservations belong in the core ledger, then require the outstanding runtime proof before merge.",
+    "title": "Approve the locked reservation kernel",
+    "body": "Bobby confirms this scoped core capability, allowing the reviewed branch to proceed through normal merge checks.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "Bobby",
-    "reason": "Repository policy names Bobby as the required explicit merge approver.",
+    "reason": "The repository policy specifically names Bobby as the required approver for this merge decision.",
     "confidence": "high"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-inventory/items/20.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/20#issuecomment-5838939075",
-    "reviewedAt": "2026-09-25T20:19:33.711Z",
+    "reviewedAt": "2026-09-25T21:00:53.690Z",
     "mainSha": "61bc604d03d9b482b05daaa3647c84c77ce4fdb3"
   }
 }
