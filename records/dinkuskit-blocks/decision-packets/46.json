@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-25T18:01:31.412Z",
+  "updatedAt": "2026-09-25T17:58:09Z",
+  "subject": {
+    "repo": "dinkuskit/blocks",
+    "kind": "pull_request",
+    "number": 46,
+    "title": "Dispatch ClawSweeper on pull request events",
+    "url": "https://github.com/dinkuskit/blocks/pull/46",
+    "state": "open",
+    "labels": [
+      "rating: 🧂 unranked krab",
+      "status: 📣 needs proof",
+      "P2",
+      "merge-risk: 🚨 security-boundary",
+      "merge-risk: 🚨 automation"
+    ],
+    "createdAt": "2026-09-25T16:13:11Z",
+    "updatedAt": "2026-09-25T17:58:09Z",
+    "headSha": "a1c8b23522d90835f667efd55e8e503f226fcb79"
+  },
+  "lane": "security_boundary",
+  "priority": "P2",
+  "question": "Should this repository enable the new `pull_request_target` workflow that forwards ClawSweeper secrets to a SHA-pinned reusable workflow before a live pull-request-event run can be observed?",
+  "rationale": "The implementation avoids executing pull-request code, but it changes the privileged automation boundary and cannot self-dispatch from this branch before it is on the default branch.",
+  "options": [
+    {
+      "title": "Approve staged enablement",
+      "body": "Approve the bounded, SHA-pinned workflow and observe a controlled non-draft pull request immediately after enabling it.",
+      "recommended": true
+    },
+    {
+      "title": "Keep manual dispatch only",
+      "body": "Retain the existing trusted manual workflow until a separately approved staging route can prove event dispatch.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve staged enablement",
+    "body": "Approve the bounded, SHA-pinned workflow and observe a controlled non-draft pull request immediately after enabling it.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "The repository policy names Bobby as the required merge approver.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-blocks/items/46.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/46#issuecomment-5837115590",
+    "reviewedAt": "2026-09-25T18:01:31.412Z",
+    "mainSha": "d6703543a6d94e531d75294406d8c3661a42ed59"
+  }
+}
