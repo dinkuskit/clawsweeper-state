@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-25T16:43:21.595Z",
+  "updatedAt": "2026-09-25T16:40:13Z",
+  "subject": {
+    "repo": "dinkuskit/template-store",
+    "kind": "pull_request",
+    "number": 5,
+    "title": "feat: catch storefront up to unmanaged product sellability",
+    "url": "https://github.com/dinkuskit/template-store/pull/5",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-25T16:39:10Z",
+    "updatedAt": "2026-09-25T16:40:13Z",
+    "headSha": "35832cba2abe6c8b61086e821765d6828a5826ab"
+  },
+  "lane": "product_direction",
+  "priority": "P2",
+  "question": "Should the generic store starter adopt Commerce's unmanaged manual-availability journey and advance to Commerce commit 8ca3e5d as part of its default dogfood surface?",
+  "rationale": "The implementation is bounded and proof-backed, but it adds a new user-facing starter capability and changes the pinned pre-release dependency baseline.",
+  "options": [
+    {
+      "title": "Adopt the verified journey",
+      "body": "Accept the Commerce pin and merge the bounded unmanaged-sellability proof surface as part of the starter baseline.",
+      "recommended": true
+    },
+    {
+      "title": "Keep the managed-only baseline",
+      "body": "Decline the additional starter surface and retain the existing managed Inventory proof until product scope is confirmed.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Adopt the verified journey",
+    "body": "Accept the Commerce pin and merge the bounded unmanaged-sellability proof surface as part of the starter baseline.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "The available history identifies this contributor as the author of the current storefront feature and its validation artifacts.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-template-store/items/5.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/template-store/pull/5#issuecomment-5836035556",
+    "reviewedAt": "2026-09-25T16:43:21.595Z",
+    "mainSha": "35ac1f272476e3094cecaa30124a5699c53d5a8c"
+  }
+}
