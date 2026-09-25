@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-25T21:05:33.189Z",
+  "updatedAt": "2026-09-25T21:01:33Z",
+  "subject": {
+    "repo": "dinkuskit/inventory",
+    "kind": "pull_request",
+    "number": 21,
+    "title": "chore: pin Inventory to emdash 0.40.1",
+    "url": "https://github.com/dinkuskit/inventory/pull/21",
+    "state": "open",
+    "labels": [
+      "rating: 🦪 silver shellfish",
+      "status: 📣 needs proof",
+      "P2",
+      "merge-risk: 🚨 compatibility",
+      "merge-risk: 🚨 security-boundary"
+    ],
+    "createdAt": "2026-09-25T21:01:16Z",
+    "updatedAt": "2026-09-25T21:01:33Z",
+    "headSha": "2556ad58951221d2b5e38556253cc064ec3b8f52"
+  },
+  "lane": "security_boundary",
+  "priority": "P2",
+  "question": "After reviewing redacted exact-head installation evidence, does Bobby approve accepting the emdash@0.40.1 lifecycle-script supply-chain boundary?",
+  "rationale": "AGENTS.md reserves this dependency-boundary approval and merge decision to Bobby, while the current PR lacks inspectable real installation proof.",
+  "options": [
+    {
+      "title": "Approve after live proof",
+      "body": "Require a redacted exact-head npm ci and resolved emdash@0.40.1 transcript, then approve the scoped development-only update.",
+      "recommended": true
+    },
+    {
+      "title": "Retain the prior baseline",
+      "body": "Decline the 0.40.1 update and keep the existing exact 0.35.0 scaffold pin until the boundary is acceptable.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve after live proof",
+    "body": "Require a redacted exact-head npm ci and resolved emdash@0.40.1 transcript, then approve the scoped development-only update.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "Repository policy names Bobby as the explicit approval authority for this merge boundary.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-inventory/items/21.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/21#issuecomment-5839635741",
+    "reviewedAt": "2026-09-25T21:05:33.189Z",
+    "mainSha": "61bc604d03d9b482b05daaa3647c84c77ce4fdb3"
+  }
+}
