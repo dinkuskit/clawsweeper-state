@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-25T18:58:37.487Z",
+  "updatedAt": "2026-09-25T18:56:15Z",
+  "subject": {
+    "repo": "dinkuskit/blocks",
+    "kind": "pull_request",
+    "number": 47,
+    "title": "Prove ClawSweeper dispatch posts one editable pickup comment",
+    "url": "https://github.com/dinkuskit/blocks/pull/47",
+    "state": "open",
+    "labels": [
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P3"
+    ],
+    "createdAt": "2026-09-25T18:42:24Z",
+    "updatedAt": "2026-09-25T18:56:15Z",
+    "headSha": "53cc7bcc1bda39857baddeae34b8d17c35867878"
+  },
+  "lane": "manual_review",
+  "priority": "P3",
+  "question": "Should this completed, explicitly non-merge dispatch canary be manually closed after accepting the pickup-comment observation?",
+  "rationale": "Repository policy prohibits this review workflow from auto-closing pull requests, and the author expressly says not to merge the canary.",
+  "options": [
+    {
+      "title": "Close the completed canary",
+      "body": "Accept the observed pickup comment as the controlled proof and manually close the PR without merging it.",
+      "recommended": true
+    },
+    {
+      "title": "Keep it open for more observation",
+      "body": "Retain the PR temporarily if a maintainer needs additional evidence that the final review edit targets the same comment.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Close the completed canary",
+    "body": "Accept the observed pickup comment as the controlled proof and manually close the PR without merging it.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "AGENTS.md identifies Bobby as the repository's explicit approval authority for merge and production decisions.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-blocks/items/47.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/47#issuecomment-5837933759",
+    "reviewedAt": "2026-09-25T18:58:37.487Z",
+    "mainSha": "2566c3524b78c54c894e6da4c59225a7350888c6"
+  }
+}
