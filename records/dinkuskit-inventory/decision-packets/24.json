@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-26T01:38:32.455Z",
-  "updatedAt": "2026-09-26T01:36:22Z",
+  "generatedAt": "2026-09-26T01:43:39.525Z",
+  "updatedAt": "2026-09-26T01:41:23Z",
   "subject": {
     "repo": "dinkuskit/inventory",
     "kind": "pull_request",
@@ -11,45 +11,45 @@
     "state": "open",
     "labels": [
       "proof: sufficient",
-      "rating: 🐚 platinum hermit",
+      "rating: 🦞 diamond lobster",
       "status: 👀 ready for maintainer look",
       "P3",
       "merge-risk: 🚨 other"
     ],
     "createdAt": "2026-09-26T01:36:09Z",
-    "updatedAt": "2026-09-26T01:36:22Z",
+    "updatedAt": "2026-09-26T01:41:23Z",
     "headSha": "8f37191ce61f3247673075eb5d975cf134c5a3e3"
   },
   "lane": "manual_review",
   "priority": "P3",
-  "question": "After the requested re-review publishes, should Bobby manually close this explicitly non-mergeable dispatch probe without merging it?",
-  "rationale": "The contributor expressly requires a later re-review before closure, and repository policy forbids automatic closure for this target.",
+  "question": "Should Bobby manually close this explicitly non-mergeable dispatch probe now that the requested re-review has been published?",
+  "rationale": "The contributor requested a second observed review before closure, and repository policy reserves repository mutation decisions to Bobby.",
   "options": [
     {
-      "title": "Complete proof and close manually",
-      "body": "Keep the probe unmerged, confirm the requested re-review publishes, and then manually close it.",
+      "title": "Close the probe unmerged",
+      "body": "Confirm this published re-review as the requested final proof and manually close the PR without merging the marker.",
       "recommended": true
     },
     {
-      "title": "Keep it open for more observation",
-      "body": "Retain the probe temporarily if additional dispatcher behavior still needs to be observed.",
+      "title": "Keep observing",
+      "body": "Leave the PR open only if another dispatcher behavior still needs a separately observed run.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Complete proof and close manually",
-    "body": "Keep the probe unmerged, confirm the requested re-review publishes, and then manually close it.",
+    "title": "Close the probe unmerged",
+    "body": "Confirm this published re-review as the requested final proof and manually close the PR without merging the marker.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "Bobby",
-    "reason": "Repository policy identifies Bobby as the explicit approval owner for merge or mutation decisions.",
-    "confidence": "medium"
+    "reason": "Repository policy identifies Bobby as the explicit approval owner for merge and mutation decisions.",
+    "confidence": "high"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-inventory/items/24.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/24#issuecomment-5842014102",
-    "reviewedAt": "2026-09-26T01:38:32.455Z",
+    "reviewedAt": "2026-09-26T01:43:39.525Z",
     "mainSha": "e5f87fc1a7f16cee7a5a967d65c25c77999510fe"
   }
 }
