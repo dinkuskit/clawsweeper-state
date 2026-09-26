@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-26T02:13:01.197Z",
-  "updatedAt": "2026-09-26T02:10:40Z",
+  "generatedAt": "2026-09-26T02:16:48.125Z",
+  "updatedAt": "2026-09-26T02:14:23Z",
   "subject": {
     "repo": "dinkuskit/inventory",
     "kind": "pull_request",
@@ -11,45 +11,45 @@
     "state": "open",
     "labels": [
       "proof: sufficient",
-      "rating: 🐚 platinum hermit",
+      "rating: 🦞 diamond lobster",
       "status: 👀 ready for maintainer look",
       "P2",
       "merge-risk: 🚨 compatibility"
     ],
     "createdAt": "2026-09-26T01:41:39Z",
-    "updatedAt": "2026-09-26T02:10:40Z",
+    "updatedAt": "2026-09-26T02:14:23Z",
     "headSha": "d51ebd10d821e44768cf1610e8f202aa9948ee28"
   },
-  "lane": "merge_risk",
+  "lane": "product_direction",
   "priority": "P2",
-  "question": "Does Bobby approve merging the new public `stock.pack_all` command and its durable receipt contract?",
-  "rationale": "The repository policy requires Bobby's explicit approval before merge, and this PR adds an exported command contract consumed by downstream clients.",
+  "question": "Does Bobby approve `stock.pack_all` and its durable receipt/result shape as a supported public Inventory API?",
+  "rationale": "This PR adds downstream-facing API surface, and repository policy requires Bobby's explicit approval before merge.",
   "options": [
     {
-      "title": "Approve the contract",
-      "body": "Confirm the public command and receipt shape as the intended supported Inventory API, allowing normal merge gating to proceed.",
+      "title": "Approve the public contract",
+      "body": "Confirm the command and receipt/result shape as supported Inventory API so normal merge gates can proceed.",
       "recommended": true
     },
     {
-      "title": "Pause the API surface",
-      "body": "Keep the PR open while the contract is narrowed or redesigned before taking on downstream compatibility commitments.",
+      "title": "Narrow or defer the surface",
+      "body": "Keep the PR open while the public contract is redesigned, made internal, or deferred.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Approve the contract",
-    "body": "Confirm the public command and receipt shape as the intended supported Inventory API, allowing normal merge gating to proceed.",
+    "title": "Approve the public contract",
+    "body": "Confirm the command and receipt/result shape as supported Inventory API so normal merge gates can proceed.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "Bobby",
-    "reason": "AGENTS.md identifies Bobby as the required approver for merging repository changes.",
+    "reason": "AGENTS.md identifies Bobby as the explicit approver for merges.",
     "confidence": "high"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-inventory/items/25.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/25#issuecomment-5842051561",
-    "reviewedAt": "2026-09-26T02:13:01.197Z",
+    "reviewedAt": "2026-09-26T02:16:48.125Z",
     "mainSha": "e5f87fc1a7f16cee7a5a967d65c25c77999510fe"
   }
 }
