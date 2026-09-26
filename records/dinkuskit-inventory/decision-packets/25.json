@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T01:47:32.802Z",
+  "updatedAt": "2026-09-26T01:41:50Z",
+  "subject": {
+    "repo": "dinkuskit/inventory",
+    "kind": "pull_request",
+    "number": 25,
+    "title": "Pack every named hold in one shot",
+    "url": "https://github.com/dinkuskit/inventory/pull/25",
+    "state": "open",
+    "labels": [
+      "rating: 🦪 silver shellfish",
+      "status: 📣 needs proof",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-26T01:41:39Z",
+    "updatedAt": "2026-09-26T01:41:50Z",
+    "headSha": "7635a548da5bd49deb4fb452fcc8109980f4ffa6"
+  },
+  "lane": "product_direction",
+  "priority": "P2",
+  "question": "Should Bobby approve `stock.pack_all` as a supported public Inventory mutation contract before it merges?",
+  "rationale": "This PR adds a new exported command surface, and repository policy explicitly reserves merge approval to Bobby.",
+  "options": [
+    {
+      "title": "Approve the contract after proof",
+      "body": "Confirm the all-or-none pack-all API is the intended durable contract once contributor runtime proof is attached.",
+      "recommended": true
+    },
+    {
+      "title": "Defer the API",
+      "body": "Keep the existing one-hold packing contract and defer pack-all until its public API direction is approved.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the contract after proof",
+    "body": "Confirm the all-or-none pack-all API is the intended durable contract once contributor runtime proof is attached.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "Repository policy explicitly assigns the final merge approval to Bobby.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-inventory/items/25.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/25#issuecomment-5842051561",
+    "reviewedAt": "2026-09-26T01:47:32.802Z",
+    "mainSha": "e5f87fc1a7f16cee7a5a967d65c25c77999510fe"
+  }
+}
