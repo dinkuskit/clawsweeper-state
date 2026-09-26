@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T16:32:08.260Z",
+  "updatedAt": "2026-09-26T16:29:59Z",
+  "subject": {
+    "repo": "dinkuskit/blocks",
+    "kind": "pull_request",
+    "number": 53,
+    "title": "feat: add the query card block",
+    "url": "https://github.com/dinkuskit/blocks/pull/53",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: ⏳ waiting on author",
+      "P3",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-26T15:54:19Z",
+    "updatedAt": "2026-09-26T16:29:59Z",
+    "headSha": "11354413654f186c5c119db596c02577100b75ce"
+  },
+  "lane": "product_direction",
+  "priority": "P3",
+  "question": "Should Dinkus Blocks admit `dinkus.query-card` as a supported public block during the dogfood period?",
+  "rationale": "The PR adds a durable public plugin and stored-content surface; repository policy reserves merge authority to the project owner, and no maintainer approval is present in the discussion.",
+  "options": [
+    {
+      "title": "Approve the bounded query card",
+      "body": "Admit only the implemented one-source, one-limit card and retain the explicit exclusions for filters, pagination, commerce fields, and further query blocks.",
+      "recommended": true
+    },
+    {
+      "title": "Defer query blocks",
+      "body": "Keep the small block vocabulary unchanged until the foundation dogfood milestone establishes a need for runtime collection queries.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the bounded query card",
+    "body": "Admit only the implemented one-source, one-limit card and retain the explicit exclusions for filters, pagination, commerce fields, and further query blocks.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "AGENTS.md explicitly reserves merge approval to Bobby during dogfood.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-blocks/items/53.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/53#issuecomment-5847907958",
+    "reviewedAt": "2026-09-26T16:32:08.260Z",
+    "mainSha": "e7ce5396723abaf2519b0f5493930d69fc71a91e"
+  }
+}
