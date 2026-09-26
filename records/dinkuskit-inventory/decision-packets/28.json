@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-26T15:19:07.273Z",
-  "updatedAt": "2026-09-26T15:16:48Z",
+  "generatedAt": "2026-09-26T15:25:12.524Z",
+  "updatedAt": "2026-09-26T15:23:16Z",
   "subject": {
     "repo": "dinkuskit/inventory",
     "kind": "pull_request",
@@ -17,39 +17,39 @@
       "merge-risk: 🚨 security-boundary"
     ],
     "createdAt": "2026-09-26T15:16:37Z",
-    "updatedAt": "2026-09-26T15:16:48Z",
-    "headSha": "e1bc7cb7f46b883112908533d8a7b30ad8f573cb"
+    "updatedAt": "2026-09-26T15:23:16Z",
+    "headSha": "51ebb21bf07fc9b7a53a8f9836ca083ce7dd2e9f"
   },
   "lane": "security_boundary",
   "priority": "P3",
-  "question": "Should Bobby approve merging the exact EmDash 0.41.0 lockfile update after reviewing the retained esbuild/workerd lifecycle-script boundary?",
-  "rationale": "AGENTS.md reserves merge approval to Bobby, and the repository documents lifecycle-script acceptance as an explicit human merge decision.",
+  "question": "Does Bobby explicitly approve accepting EmDash 0.41.0 and the documented third-party lifecycle-script boundary for this development-only toolchain update?",
+  "rationale": "AGENTS.md reserves this approval to Bobby, and the PR itself identifies lifecycle scripts as a human merge gate.",
   "options": [
     {
-      "title": "Approve after package-boundary review",
-      "body": "Confirm the updated EmDash artifacts and retained lifecycle-script boundary are acceptable, then merge after the documentation correction.",
+      "title": "Approve the reviewed pin",
+      "body": "Accept the documented 0.41.0 lockfile receipt and unchanged lifecycle-script boundary, then allow the PR to merge.",
       "recommended": true
     },
     {
-      "title": "Decline the dependency update",
-      "body": "Keep the existing pin if the package provenance or lifecycle boundary is not acceptable for this repository.",
+      "title": "Defer the update",
+      "body": "Leave the existing pin in place until the toolchain boundary can be approved or narrowed.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Approve after package-boundary review",
-    "body": "Confirm the updated EmDash artifacts and retained lifecycle-script boundary are acceptable, then merge after the documentation correction.",
+    "title": "Approve the reviewed pin",
+    "body": "Accept the documented 0.41.0 lockfile receipt and unchanged lifecycle-script boundary, then allow the PR to merge.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "Bobby",
-    "reason": "The repository policy explicitly names Bobby as the required approver for merges.",
+    "reason": "The repository policy explicitly names Bobby as the required approver for this decision.",
     "confidence": "high"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-inventory/items/28.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/28#issuecomment-5847395095",
-    "reviewedAt": "2026-09-26T15:19:07.273Z",
+    "reviewedAt": "2026-09-26T15:25:12.524Z",
     "mainSha": "0846dd6a8cf318f1b5a4e57e56df9b2313045ba6"
   }
 }
