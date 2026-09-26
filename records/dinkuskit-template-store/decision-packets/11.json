@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T02:57:46.941Z",
+  "updatedAt": "2026-09-26T02:55:34Z",
+  "subject": {
+    "repo": "dinkuskit/template-store",
+    "kind": "pull_request",
+    "number": 11,
+    "title": "feat: hide unpriced products on the public home",
+    "url": "https://github.com/dinkuskit/template-store/pull/11",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🦐 gold shrimp",
+      "status: ⏳ waiting on author",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-26T02:49:56Z",
+    "updatedAt": "2026-09-26T02:55:34Z",
+    "headSha": "25672a032125d970ce7042a90706fba491642b77"
+  },
+  "lane": "product_direction",
+  "priority": "P2",
+  "question": "Should the generic DinkusKit store starter intentionally present Regular/Sale prices despite the current design contract excluding price implication?",
+  "rationale": "The PR adds a user-visible product capability that directly conflicts with the repository's prioritized design contract, so acceptance requires explicit maintainer intent.",
+  "options": [
+    {
+      "title": "Preserve the current contract",
+      "body": "Keep the unpriced-listability work only if it can remain a non-price proof, and remove public Regular/Sale presentation.",
+      "recommended": true
+    },
+    {
+      "title": "Adopt price presentation",
+      "body": "Approve price as a starter capability and update the design contract and feature boundary before merging this UI.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Preserve the current contract",
+    "body": "Keep the unpriced-listability work only if it can remain a non-price proof, and remove public Regular/Sale presentation.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "They are the identified recent contributor for the affected feature and can provide the implementation context for the product decision.",
+    "confidence": "low"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-template-store/items/11.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/template-store/pull/11#issuecomment-5842526642",
+    "reviewedAt": "2026-09-26T02:57:46.941Z",
+    "mainSha": "c12b2d9bac456f468a14dc414075dff94c74cb95"
+  }
+}
