@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T13:01:30.705Z",
+  "updatedAt": "2026-09-26T12:59:27Z",
+  "subject": {
+    "repo": "dinkuskit/template-store",
+    "kind": "pull_request",
+    "number": 13,
+    "title": "chore: pin template-store blocks to main",
+    "url": "https://github.com/dinkuskit/template-store/pull/13",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🦞 diamond lobster",
+      "status: 👀 ready for maintainer look",
+      "P3"
+    ],
+    "createdAt": "2026-09-26T12:59:14Z",
+    "updatedAt": "2026-09-26T12:59:27Z",
+    "headSha": "fff549ac63793cefcab280dd939b5f070d08e2b5"
+  },
+  "lane": "manual_review",
+  "priority": "P3",
+  "question": "Should the already-present Blocks pin be closed as redundant or merged through the authorized repository workflow?",
+  "rationale": "Repository policy prohibits this review workflow from automatically closing pull requests, while current main already contains the requested pin and audit invariant.",
+  "options": [
+    {
+      "title": "Close as redundant",
+      "body": "Close the PR manually because current main already contains the exact dependency pin and matching audit expectation.",
+      "recommended": true
+    },
+    {
+      "title": "Merge after live verification",
+      "body": "Merge only if the live three-way result still contains a distinct authorized change beyond current main.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Close as redundant",
+    "body": "Close the PR manually because current main already contains the exact dependency pin and matching audit expectation.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "The contributor's PR body identifies Bobby as the person retaining the merge decision.",
+    "confidence": "low"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-template-store/items/13.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/template-store/pull/13#issuecomment-5846466800",
+    "reviewedAt": "2026-09-26T13:01:30.705Z",
+    "mainSha": "a1c8f675120fe43834fcd0e55d863fa583aca3e1"
+  }
+}
