@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T16:34:15.962Z",
+  "updatedAt": "2026-09-26T16:32:01Z",
+  "subject": {
+    "repo": "dinkuskit/inventory",
+    "kind": "pull_request",
+    "number": 29,
+    "title": "Mark packed holds Delivered without moving counts",
+    "url": "https://github.com/dinkuskit/inventory/pull/29",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-26T16:25:14Z",
+    "updatedAt": "2026-09-26T16:32:01Z",
+    "headSha": "b5457f2a14f0b6bdade6c9f96d90e1a2c0c23c99"
+  },
+  "lane": "merge_risk",
+  "priority": "P2",
+  "question": "Does Bobby approve releasing the additive Delivered reservation state and its schema-v9 migration as the public Inventory contract?",
+  "rationale": "The repository policy requires Bobby's explicit approval for merge, and the change expands public SDK unions plus durable storage state.",
+  "options": [
+    {
+      "title": "Approve the locked contract",
+      "body": "Accept the documented Delivered command and v8-to-v9 migration, relying on the included local runtime and migration proof.",
+      "recommended": true
+    },
+    {
+      "title": "Pause for contract changes",
+      "body": "Keep the PR open if the public state transition or downstream SDK compatibility needs a different permanent shape.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the locked contract",
+    "body": "Accept the documented Delivered command and v8-to-v9 migration, relying on the included local runtime and migration proof.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "AGENTS.md identifies Bobby as the required approval authority for merges.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-inventory/items/29.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/29#issuecomment-5847875661",
+    "reviewedAt": "2026-09-26T16:34:15.962Z",
+    "mainSha": "0846dd6a8cf318f1b5a4e57e56df9b2313045ba6"
+  }
+}
