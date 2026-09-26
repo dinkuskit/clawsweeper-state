@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-26T16:50:44.392Z",
-  "updatedAt": "2026-09-26T16:43:36Z",
+  "generatedAt": "2026-09-26T16:57:55.457Z",
+  "updatedAt": "2026-09-26T16:55:13Z",
   "subject": {
     "repo": "dinkuskit/commerce",
     "kind": "pull_request",
@@ -10,47 +10,51 @@
     "url": "https://github.com/dinkuskit/commerce/pull/23",
     "state": "open",
     "labels": [
-      "proof: sufficient",
       "proof: 📸 screenshot",
-      "rating: 🦪 silver shellfish",
-      "status: ⏳ waiting on author",
+      "rating: 🧂 unranked krab",
+      "status: 📣 needs proof",
       "P1",
-      "merge-risk: 🚨 compatibility"
+      "merge-risk: 🚨 other"
     ],
     "createdAt": "2026-09-26T16:31:18Z",
-    "updatedAt": "2026-09-26T16:43:36Z",
-    "headSha": "355b190414fcaad2abb5b3a759f372997bebc077"
+    "updatedAt": "2026-09-26T16:55:13Z",
+    "headSha": "813fa5a90303bc6d0239889c12c355afb4173d32"
   },
   "lane": "merge_risk",
   "priority": "P1",
-  "question": "Which supported storage primitive should make the combined price and stock-status update safe against concurrent saves?",
-  "rationale": "The current storage interfaces expose independent record writes, so choosing transaction support versus a versioned compatibility protocol requires repository ownership judgment.",
+  "question": "Should the combined Save wait for an atomic conditional/transactional persistence primitive rather than merge with a rollback that can overwrite another clerk's price?",
+  "rationale": "The current storage interface cannot make the rollback comparison and restore atomic, so preserving the advertised all-or-nothing Save semantics needs an intentional persistence strategy.",
   "options": [
     {
-      "title": "Use an atomic mutation boundary",
-      "body": "Perform the price and manual-availability changes in one supported transaction or command so either both persist or neither does.",
+      "title": "Add atomic conflict protection",
+      "body": "Provide a conditional or transactional save/rollback path and prove that a competing later price remains unchanged.",
       "recommended": true
     },
     {
-      "title": "Adopt versioned compensation",
-      "body": "Add a price revision and restore only when the failed request still owns the stored price version.",
+      "title": "Defer the combined Save",
+      "body": "Keep price and stock writes separate until the storage layer can preserve both records without a lost-update window.",
+      "recommended": false
+    },
+    {
+      "title": "Accept independent writes",
+      "body": "Document that price and stock status may commit independently instead of promising compensating rollback semantics.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Use an atomic mutation boundary",
-    "body": "Perform the price and manual-availability changes in one supported transaction or command so either both persist or neither does.",
+    "title": "Add atomic conflict protection",
+    "body": "Provide a conditional or transactional save/rollback path and prove that a competing later price remains unchanged.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "saariuslystoned",
-    "reason": "They are the available adjacent owner for the related Manage Stock state work and this PR's save-path design.",
+    "reason": "They are the available recent catalog-admin contributor identified by the repository's recorded feature lineage.",
     "confidence": "medium"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-commerce/items/23.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/23#issuecomment-5847919130",
-    "reviewedAt": "2026-09-26T16:50:44.392Z",
+    "reviewedAt": "2026-09-26T16:57:55.457Z",
     "mainSha": "81a6f571b5ad3dcc73ba6af9a89bdb438c6a8e06"
   }
 }
