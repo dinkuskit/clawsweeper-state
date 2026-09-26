@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T14:15:31.701Z",
+  "updatedAt": "2026-09-26T14:13:15Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 22,
+    "title": "feat: let a clerk set Regular and Sale in EmDash admin",
+    "url": "https://github.com/dinkuskit/commerce/pull/22",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2"
+    ],
+    "createdAt": "2026-09-26T13:25:51Z",
+    "updatedAt": "2026-09-26T14:13:15Z",
+    "headSha": "3ade43106655f7ae62e8c0acd03cda2a93b10d45"
+  },
+  "lane": "merge_risk",
+  "priority": "P2",
+  "question": "Should this bounded native EmDash Products admin surface receive the explicit human merge approval required by repository policy?",
+  "rationale": "The repository policy reserves merge approval to humans, while this feature adds a new operator-facing Commerce surface.",
+  "options": [
+    {
+      "title": "Approve the bounded admin slice",
+      "body": "Approve the PR as the documented Commerce-owned pilot for creating catalog items and editing Regular and Sale prices.",
+      "recommended": true
+    },
+    {
+      "title": "Pause for scope adjustment",
+      "body": "Hold the PR if the native EmDash admin should not be part of the current Commerce pilot boundary.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the bounded admin slice",
+    "body": "Approve the PR as the documented Commerce-owned pilot for creating catalog items and editing Regular and Sale prices.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "The available history ties this contributor most directly to the catalog-admin implementation and its stated pilot boundary.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/22.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/22#issuecomment-5846639337",
+    "reviewedAt": "2026-09-26T14:15:31.701Z",
+    "mainSha": "3f20fe96d5b3104c4b599e669d18f54fd8ab2587"
+  }
+}
