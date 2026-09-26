@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T17:24:00.640Z",
+  "updatedAt": "2026-09-26T17:21:50Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 23,
+    "title": "feat: let a clerk mark stock status and hide out-of-stock products",
+    "url": "https://github.com/dinkuskit/commerce/pull/23",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "proof: 📸 screenshot",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-26T16:31:18Z",
+    "updatedAt": "2026-09-26T17:21:50Z",
+    "headSha": "22644360c70bc16e1d185db355d4b7c22a305147"
+  },
+  "lane": "merge_risk",
+  "priority": "P2",
+  "question": "Should the new persistent Store listing setting and exported storefront-listing API be accepted as supported Commerce contract?",
+  "rationale": "The repository policy reserves merges for explicit human approval, and this feature adds both a persisted setting and public exports.",
+  "options": [
+    {
+      "title": "Approve the contract",
+      "body": "Accept the Store-level hide-out-of-stock setting and its public listing exports, with missing settings continuing to default to Show.",
+      "recommended": true
+    },
+    {
+      "title": "Narrow the public surface",
+      "body": "Request a focused revision that keeps the behavior internal or adjusts the exported API before merge.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the contract",
+    "body": "Accept the Store-level hide-out-of-stock setting and its public listing exports, with missing settings continuing to default to Show.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "This contributor authored the implementation and the related catalog/availability work in the supplied history.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/23.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/23#issuecomment-5847919130",
+    "reviewedAt": "2026-09-26T17:24:00.640Z",
+    "mainSha": "81a6f571b5ad3dcc73ba6af9a89bdb438c6a8e06"
+  }
+}
