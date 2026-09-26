@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T21:28:13.857Z",
+  "updatedAt": "2026-09-26T21:24:44Z",
+  "subject": {
+    "repo": "dinkuskit/template-store",
+    "kind": "pull_request",
+    "number": 18,
+    "title": "Add first-class page blocks transition proof",
+    "url": "https://github.com/dinkuskit/template-store/pull/18",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2"
+    ],
+    "createdAt": "2026-09-26T20:36:53Z",
+    "updatedAt": "2026-09-26T21:24:44Z",
+    "headSha": "ce050112428dea4cd5ae0039e48e93554c86a752"
+  },
+  "lane": "product_direction",
+  "priority": "P2",
+  "question": "Should the generic store starter adopt first-class page Blocks and the documented local Home-layout upgrade path?",
+  "rationale": "This is a new reusable template capability with a persisted schema and operator migration path, so product scope cannot be inferred solely from passing proof.",
+  "options": [
+    {
+      "title": "Adopt the transition",
+      "body": "Approve the narrowly scoped Blocks renderer and guarded local migration as part of the starter's supported composition contract.",
+      "recommended": true
+    },
+    {
+      "title": "Keep Portable Text only",
+      "body": "Decline the new persisted layout surface and retain the existing Portable Text composition model.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Adopt the transition",
+    "body": "Approve the narrowly scoped Blocks renderer and guarded local migration as part of the starter's supported composition contract.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "This contributor authored the complete proposed transition and can provide implementation context while maintainers decide the product boundary.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-template-store/items/18.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/template-store/pull/18#issuecomment-5849678935",
+    "reviewedAt": "2026-09-26T21:28:13.857Z",
+    "mainSha": "7662183ba27ede2073657540c42f90b9d8f56569"
+  }
+}
