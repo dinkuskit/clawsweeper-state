@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-26T13:40:15.758Z",
-  "updatedAt": "2026-09-26T13:37:29Z",
+  "generatedAt": "2026-09-26T13:47:24.101Z",
+  "updatedAt": "2026-09-26T13:44:52Z",
   "subject": {
     "repo": "dinkuskit/inventory",
     "kind": "pull_request",
@@ -10,45 +10,46 @@
     "url": "https://github.com/dinkuskit/inventory/pull/27",
     "state": "open",
     "labels": [
-      "rating: 🧂 unranked krab",
-      "status: 📣 needs proof",
-      "P1",
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2",
       "merge-risk: 🚨 compatibility"
     ],
     "createdAt": "2026-09-26T13:37:19Z",
-    "updatedAt": "2026-09-26T13:37:29Z",
-    "headSha": "91526e67a346dc5651637b63b3426eded558fab1"
+    "updatedAt": "2026-09-26T13:44:52Z",
+    "headSha": "d076405d65967787ec814be8bb70a94f3f69b794"
   },
-  "lane": "product_direction",
-  "priority": "P1",
-  "question": "Should the public reservation status remain backward-compatible as `active`, or should Inventory make the `not_shipped` rename an explicitly versioned breaking SDK migration?",
-  "rationale": "The repository identifies reservation records as public compatibility surface, while the PR changes both stored and exported status values without a compatibility period.",
+  "lane": "merge_risk",
+  "priority": "P2",
+  "question": "Should Bobby approve merging the v8 persisted reservation-status rename together with `stock.unpack`?",
+  "rationale": "The repository requires Bobby’s explicit approval for merge, and the status rename is a compatibility-sensitive persisted-data migration.",
   "options": [
     {
-      "title": "Preserve public compatibility",
-      "body": "Keep the existing `active` SDK status and present “Not shipped” as display terminology until a versioned migration is approved.",
+      "title": "Approve the bounded migration",
+      "body": "Approve the PR as the chartered v8 upgrade after confirming the committed local SQLite and persisted Durable Object proof represents the intended compatibility boundary.",
       "recommended": true
     },
     {
-      "title": "Approve a breaking migration",
-      "body": "Adopt `not_shipped` only with an explicit versioning, deprecation, upgrade-documentation, and consumer-proof plan.",
+      "title": "Pause for consumer audit",
+      "body": "Hold merge until any external reservation-status consumers are identified and confirmed to accept `not_shipped` after upgrade.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Preserve public compatibility",
-    "body": "Keep the existing `active` SDK status and present “Not shipped” as display terminology until a versioned migration is approved.",
+    "title": "Approve the bounded migration",
+    "body": "Approve the PR as the chartered v8 upgrade after confirming the committed local SQLite and persisted Durable Object proof represents the intended compatibility boundary.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "Bobby",
-    "reason": "Repository policy assigns merge approval to Bobby, making Bobby the clearest available owner for this compatibility decision.",
-    "confidence": "high"
+    "reason": "Repository policy names Bobby as the required approver, and the project ledger attributes selection of this kernel slice to Bobby.",
+    "confidence": "medium"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-inventory/items/27.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/27#issuecomment-5846713453",
-    "reviewedAt": "2026-09-26T13:40:15.758Z",
+    "reviewedAt": "2026-09-26T13:47:24.101Z",
     "mainSha": "67512943038fa3f443abead45a53862783d6e429"
   }
 }
