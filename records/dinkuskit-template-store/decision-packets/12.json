@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-26T03:13:04.247Z",
-  "updatedAt": "2026-09-26T03:10:52Z",
+  "generatedAt": "2026-09-26T12:28:46.971Z",
+  "updatedAt": "2026-09-26T12:25:40Z",
   "subject": {
     "repo": "dinkuskit/template-store",
     "kind": "pull_request",
@@ -17,39 +17,39 @@
       "merge-risk: 🚨 compatibility"
     ],
     "createdAt": "2026-09-26T02:52:43Z",
-    "updatedAt": "2026-09-26T03:10:52Z",
-    "headSha": "5d34cd60c79b3ae02b0fea3ba8e9fe851eeda283"
+    "updatedAt": "2026-09-26T12:25:40Z",
+    "headSha": "ad88ae55ae997420304d2228be96b249f1c230bb"
   },
-  "lane": "merge_risk",
+  "lane": "product_direction",
   "priority": "P2",
-  "question": "Should this reusable starter expansion merge after confirming the EmDash upgrade path for existing initialized instances?",
-  "rationale": "The branch changes the seeded content contract and public routes; the supplied proof is strong for a fresh local setup but does not establish upgrade behavior for prior starter data.",
+  "question": "Should the generic starter adopt the classic merchandise catalog as its default first slice, with existing initialized local starters opting in through the documented seed upgrade?",
+  "rationale": "This is a new default starter capability with a deliberate upgrade boundary, so merge acceptance requires maintainer product ownership rather than a mechanical repair.",
   "options": [
     {
-      "title": "Confirm upgrade behavior, then merge",
-      "body": "Verify an existing initialized starter preserves its prior content and can load the new merchandise collection before approving the new default.",
+      "title": "Adopt the catalog slice",
+      "body": "Merge the proven bounded catalog and retain the explicit backup-first seed procedure for existing local starters.",
       "recommended": true
     },
     {
-      "title": "Defer until upgrade guidance exists",
-      "body": "Keep the catalog branch open until maintainers define or document the supported migration behavior for existing starter instances.",
+      "title": "Keep the availability-only starter",
+      "body": "Do not merge the new catalog surface if the generic starter should remain limited to the existing availability proof.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Confirm upgrade behavior, then merge",
-    "body": "Verify an existing initialized starter preserves its prior content and can load the new merchandise collection before approving the new default.",
+    "title": "Adopt the catalog slice",
+    "body": "Merge the proven bounded catalog and retain the explicit backup-first seed procedure for existing local starters.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "saariuslystoned",
-    "reason": "Their merged and proposed work spans the price, availability, seed, and catalog surfaces involved in the upgrade decision.",
+    "reason": "They are the recent contributor across the merged availability baseline and this catalog implementation.",
     "confidence": "high"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-template-store/items/12.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/template-store/pull/12#issuecomment-5842574218",
-    "reviewedAt": "2026-09-26T03:13:04.247Z",
+    "reviewedAt": "2026-09-26T12:28:46.971Z",
     "mainSha": "6792992303b05918a15c475ac90316530a2f61d5"
   }
 }
