@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T15:24:24.603Z",
+  "updatedAt": "2026-09-26T15:22:23Z",
+  "subject": {
+    "repo": "dinkuskit/blocks",
+    "kind": "pull_request",
+    "number": 52,
+    "title": "Pin blocks to exact EmDash 0.41.0",
+    "url": "https://github.com/dinkuskit/blocks/pull/52",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-26T15:22:12Z",
+    "updatedAt": "2026-09-26T15:22:23Z",
+    "headSha": "e0f4d8da2a7a1684bc7e0e5765c96f86464da6a8"
+  },
+  "lane": "merge_risk",
+  "priority": "P2",
+  "question": "Does Bobby approve changing the supported exact EmDash compatibility baseline from 0.40.1 to 0.41.0 during dogfood?",
+  "rationale": "The repository policy explicitly reserves merge authority to the project owner, while this PR changes the public exact peer baseline.",
+  "options": [
+    {
+      "title": "Approve the 0.41.0 baseline",
+      "body": "Accept the proven exact 0.41.0 compatibility matrix and merge this pin update.",
+      "recommended": true
+    },
+    {
+      "title": "Retain the current baseline",
+      "body": "Keep 0.40.1 as the supported exact peer version until the owner wants to advance the dogfood matrix.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the 0.41.0 baseline",
+    "body": "Accept the proven exact 0.41.0 compatibility matrix and merge this pin update.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "AGENTS.md names Bobby as the required approver for merges.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-blocks/items/52.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/52#issuecomment-5847433400",
+    "reviewedAt": "2026-09-26T15:24:24.603Z",
+    "mainSha": "d3a73eea94c8d9a7d4b6609cc5e2f71134520ae5"
+  }
+}
