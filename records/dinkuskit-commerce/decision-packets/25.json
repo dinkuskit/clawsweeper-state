@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T18:16:17.517Z",
+  "updatedAt": "2026-09-26T18:14:09Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 25,
+    "title": "docs: link canonical kit vision and shared launch direction",
+    "url": "https://github.com/dinkuskit/commerce/pull/25",
+    "state": "open",
+    "labels": [
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P3"
+    ],
+    "createdAt": "2026-09-26T18:13:59Z",
+    "updatedAt": "2026-09-26T18:14:09Z",
+    "headSha": "353e1145050ff1c6bc768ef6ee11c8d9c75df6c9"
+  },
+  "lane": "product_direction",
+  "priority": "P3",
+  "question": "Should Commerce publicly adopt the proposed shared launch-direction wording after the canonical organization vision and roadmap are merged?",
+  "rationale": "The change makes cross-repository product direction part of Commerce’s public README, while the discussion contains no maintainer confirmation of the wording or dependency sequencing.",
+  "options": [
+    {
+      "title": "Approve the dependent documentation",
+      "body": "Merge the organization documents first, then merge this README-only change with the stated scope boundary.",
+      "recommended": true
+    },
+    {
+      "title": "Keep Commerce documentation self-contained",
+      "body": "Defer the external links until the organization documents are stable or replace them with wording maintained within this repository.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the dependent documentation",
+    "body": "Merge the organization documents first, then merge this README-only change with the stated scope boundary.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "They are the only evidence-backed contributor connected to both the proposed documentation and the current EmDash pilot context.",
+    "confidence": "low"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/25.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/25#issuecomment-5848645735",
+    "reviewedAt": "2026-09-26T18:16:17.517Z",
+    "mainSha": "81a6f571b5ad3dcc73ba6af9a89bdb438c6a8e06"
+  }
+}
