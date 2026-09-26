@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T13:40:15.758Z",
+  "updatedAt": "2026-09-26T13:37:29Z",
+  "subject": {
+    "repo": "dinkuskit/inventory",
+    "kind": "pull_request",
+    "number": 27,
+    "title": "Unpack a packed hold to Not shipped",
+    "url": "https://github.com/dinkuskit/inventory/pull/27",
+    "state": "open",
+    "labels": [
+      "rating: 🧂 unranked krab",
+      "status: 📣 needs proof",
+      "P1",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-26T13:37:19Z",
+    "updatedAt": "2026-09-26T13:37:29Z",
+    "headSha": "91526e67a346dc5651637b63b3426eded558fab1"
+  },
+  "lane": "product_direction",
+  "priority": "P1",
+  "question": "Should the public reservation status remain backward-compatible as `active`, or should Inventory make the `not_shipped` rename an explicitly versioned breaking SDK migration?",
+  "rationale": "The repository identifies reservation records as public compatibility surface, while the PR changes both stored and exported status values without a compatibility period.",
+  "options": [
+    {
+      "title": "Preserve public compatibility",
+      "body": "Keep the existing `active` SDK status and present “Not shipped” as display terminology until a versioned migration is approved.",
+      "recommended": true
+    },
+    {
+      "title": "Approve a breaking migration",
+      "body": "Adopt `not_shipped` only with an explicit versioning, deprecation, upgrade-documentation, and consumer-proof plan.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Preserve public compatibility",
+    "body": "Keep the existing `active` SDK status and present “Not shipped” as display terminology until a versioned migration is approved.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "Repository policy assigns merge approval to Bobby, making Bobby the clearest available owner for this compatibility decision.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-inventory/items/27.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/27#issuecomment-5846713453",
+    "reviewedAt": "2026-09-26T13:40:15.758Z",
+    "mainSha": "67512943038fa3f443abead45a53862783d6e429"
+  }
+}
