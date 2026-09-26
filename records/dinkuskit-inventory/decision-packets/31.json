@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T18:19:51.894Z",
+  "updatedAt": "2026-09-26T18:14:12Z",
+  "subject": {
+    "repo": "dinkuskit/inventory",
+    "kind": "pull_request",
+    "number": 31,
+    "title": "docs: link canonical kit vision and shared launch direction",
+    "url": "https://github.com/dinkuskit/inventory/pull/31",
+    "state": "open",
+    "labels": [
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P3",
+      "merge-risk: 🚨 other"
+    ],
+    "createdAt": "2026-09-26T18:14:00Z",
+    "updatedAt": "2026-09-26T18:14:12Z",
+    "headSha": "0490e37cc8860176e6f8dd1889e6aedb654b94a4"
+  },
+  "lane": "product_direction",
+  "priority": "P3",
+  "question": "Should this repository publish the shared Kit direction only after https://github.com/dinkuskit/.github/pull/12 establishes the canonical public documents?",
+  "rationale": "The README makes an external canonical product direction part of this repository's public entry point, and repository policy reserves merge approval to Bobby.",
+  "options": [
+    {
+      "title": "Sequence the dependent documentation first",
+      "body": "Merge the canonical document PR, verify its main-branch links, then merge this narrow README update.",
+      "recommended": true
+    },
+    {
+      "title": "Keep the direction repository-local",
+      "body": "Remove the cross-repository canonical links and retain only Inventory-owned public contract references until shared documents are approved.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Sequence the dependent documentation first",
+    "body": "Merge the canonical document PR, verify its main-branch links, then merge this narrow README update.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "Repository policy explicitly assigns Bobby approval over merges.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-inventory/items/31.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/31#issuecomment-5848646164",
+    "reviewedAt": "2026-09-26T18:19:51.894Z",
+    "mainSha": "5889c7d59398376da51ac400d5c1f1214aba2c6b"
+  }
+}
