@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T18:16:09.124Z",
+  "updatedAt": "2026-09-26T18:14:02Z",
+  "subject": {
+    "repo": "dinkuskit/inventory",
+    "kind": "pull_request",
+    "number": 30,
+    "title": "feat: undo Delivered ticket to Packed",
+    "url": "https://github.com/dinkuskit/inventory/pull/30",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2"
+    ],
+    "createdAt": "2026-09-26T17:48:54Z",
+    "updatedAt": "2026-09-26T18:14:02Z",
+    "headSha": "ada23d0045df53ca08a202bf6f33b1a8d37af76e"
+  },
+  "lane": "manual_review",
+  "priority": "P2",
+  "question": "Does Bobby approve merging this GrillTrack-locked public `stock.undo_deliver` command?",
+  "rationale": "AGENTS.md requires Bobby's explicit approval before any merge, and this PR expands the SDK command surface.",
+  "options": [
+    {
+      "title": "Approve merge",
+      "body": "Approve the locked one-ticket status-only undo command backed by receipt, replay, test, and runtime proof.",
+      "recommended": true
+    },
+    {
+      "title": "Defer the slice",
+      "body": "Keep the PR open if the newly exposed command should wait for a different product milestone or contract decision.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve merge",
+    "body": "Approve the locked one-ticket status-only undo command backed by receipt, replay, test, and runtime proof.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "Repository policy identifies Bobby as the required approver for merges.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-inventory/items/30.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/30#issuecomment-5848464670",
+    "reviewedAt": "2026-09-26T18:16:09.124Z",
+    "mainSha": "5889c7d59398376da51ac400d5c1f1214aba2c6b"
+  }
+}
