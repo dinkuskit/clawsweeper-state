@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T16:50:44.392Z",
+  "updatedAt": "2026-09-26T16:43:36Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 23,
+    "title": "feat: let a clerk mark stock status and hide out-of-stock products",
+    "url": "https://github.com/dinkuskit/commerce/pull/23",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "proof: 📸 screenshot",
+      "rating: 🦪 silver shellfish",
+      "status: ⏳ waiting on author",
+      "P1",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-26T16:31:18Z",
+    "updatedAt": "2026-09-26T16:43:36Z",
+    "headSha": "355b190414fcaad2abb5b3a759f372997bebc077"
+  },
+  "lane": "merge_risk",
+  "priority": "P1",
+  "question": "Which supported storage primitive should make the combined price and stock-status update safe against concurrent saves?",
+  "rationale": "The current storage interfaces expose independent record writes, so choosing transaction support versus a versioned compatibility protocol requires repository ownership judgment.",
+  "options": [
+    {
+      "title": "Use an atomic mutation boundary",
+      "body": "Perform the price and manual-availability changes in one supported transaction or command so either both persist or neither does.",
+      "recommended": true
+    },
+    {
+      "title": "Adopt versioned compensation",
+      "body": "Add a price revision and restore only when the failed request still owns the stored price version.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Use an atomic mutation boundary",
+    "body": "Perform the price and manual-availability changes in one supported transaction or command so either both persist or neither does.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "They are the available adjacent owner for the related Manage Stock state work and this PR's save-path design.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/23.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/23#issuecomment-5847919130",
+    "reviewedAt": "2026-09-26T16:50:44.392Z",
+    "mainSha": "81a6f571b5ad3dcc73ba6af9a89bdb438c6a8e06"
+  }
+}
