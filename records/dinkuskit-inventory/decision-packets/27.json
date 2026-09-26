@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-26T13:47:24.101Z",
-  "updatedAt": "2026-09-26T13:44:52Z",
+  "generatedAt": "2026-09-26T13:51:10.180Z",
+  "updatedAt": "2026-09-26T13:48:54Z",
   "subject": {
     "repo": "dinkuskit/inventory",
     "kind": "pull_request",
@@ -17,39 +17,39 @@
       "merge-risk: 🚨 compatibility"
     ],
     "createdAt": "2026-09-26T13:37:19Z",
-    "updatedAt": "2026-09-26T13:44:52Z",
+    "updatedAt": "2026-09-26T13:48:54Z",
     "headSha": "d076405d65967787ec814be8bb70a94f3f69b794"
   },
   "lane": "merge_risk",
   "priority": "P2",
-  "question": "Should Bobby approve merging the v8 persisted reservation-status rename together with `stock.unpack`?",
-  "rationale": "The repository requires Bobby’s explicit approval for merge, and the status rename is a compatibility-sensitive persisted-data migration.",
+  "question": "Should Bobby approve merging the v8 persisted reservation-status rename with `stock.unpack`?",
+  "rationale": "The repository requires Bobby's explicit merge approval, and the migration changes a persisted reservation value that external consumers could deserialize.",
   "options": [
     {
       "title": "Approve the bounded migration",
-      "body": "Approve the PR as the chartered v8 upgrade after confirming the committed local SQLite and persisted Durable Object proof represents the intended compatibility boundary.",
+      "body": "Approve the PR after confirming `not_shipped` is the intended replacement for persisted open reservation status.",
       "recommended": true
     },
     {
-      "title": "Pause for consumer audit",
-      "body": "Hold merge until any external reservation-status consumers are identified and confirmed to accept `not_shipped` after upgrade.",
+      "title": "Audit consumers first",
+      "body": "Pause merging until consumers of the predecessor `active` status have been identified or shown not to exist.",
       "recommended": false
     }
   ],
   "recommendation": {
     "title": "Approve the bounded migration",
-    "body": "Approve the PR as the chartered v8 upgrade after confirming the committed local SQLite and persisted Durable Object proof represents the intended compatibility boundary.",
+    "body": "Approve the PR after confirming `not_shipped` is the intended replacement for persisted open reservation status.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "Bobby",
-    "reason": "Repository policy names Bobby as the required approver, and the project ledger attributes selection of this kernel slice to Bobby.",
-    "confidence": "medium"
+    "reason": "AGENTS.md explicitly names Bobby as the required approver for merges.",
+    "confidence": "high"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-inventory/items/27.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/27#issuecomment-5846713453",
-    "reviewedAt": "2026-09-26T13:47:24.101Z",
+    "reviewedAt": "2026-09-26T13:51:10.180Z",
     "mainSha": "67512943038fa3f443abead45a53862783d6e429"
   }
 }
