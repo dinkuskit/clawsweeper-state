@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-26T18:36:02.511Z",
+  "updatedAt": "2026-09-26T18:33:28Z",
+  "subject": {
+    "repo": "dinkuskit/template-store",
+    "kind": "pull_request",
+    "number": 17,
+    "title": "feat: make Commerce Products the public store catalog",
+    "url": "https://github.com/dinkuskit/template-store/pull/17",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🦐 gold shrimp",
+      "status: ⏳ waiting on author",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-26T18:21:26Z",
+    "updatedAt": "2026-09-26T18:33:28Z",
+    "headSha": "461e71f9f67d4e9e0a9323c894fe1837a3730ced"
+  },
+  "lane": "product_direction",
+  "priority": "P2",
+  "question": "Should Commerce expose a supported public Products-admin entry for this starter, or should the catalog integration be narrowed until one exists?",
+  "rationale": "The current repository contract disallows the private admin-source alias, while publishing a stable replacement is an upstream Commerce API decision.",
+  "options": [
+    {
+      "title": "Require a public Commerce export",
+      "body": "Have Commerce provide a supported Products-admin entry, update the pin, and remove the internal alias before merge.",
+      "recommended": true
+    },
+    {
+      "title": "Defer the native admin integration",
+      "body": "Keep the starter on its existing supported surface until Commerce publishes an appropriate public entry point.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Require a public Commerce export",
+    "body": "Have Commerce provide a supported Products-admin entry, update the pin, and remove the internal alias before merge.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "They authored the proposed Commerce catalog integration and can route the needed Commerce API decision.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-template-store/items/17.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/template-store/pull/17#issuecomment-5848784757",
+    "reviewedAt": "2026-09-26T18:36:02.511Z",
+    "mainSha": "06b653413829cafedbc440c350562c99df32a269"
+  }
+}
