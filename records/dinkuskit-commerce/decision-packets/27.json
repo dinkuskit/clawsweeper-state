@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-27T02:27:18.031Z",
+  "updatedAt": "2026-09-27T02:24:55Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 27,
+    "title": "feat: Registry-safe Commerce Block Kit admin",
+    "url": "https://github.com/dinkuskit/commerce/pull/27",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🦐 gold shrimp",
+      "status: ⏳ waiting on author",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-27T01:18:55Z",
+    "updatedAt": "2026-09-27T02:24:55Z",
+    "headSha": "0d120659d39e859ed4d32224b5981a18029ccb01"
+  },
+  "lane": "product_direction",
+  "priority": "P2",
+  "question": "Should this pilot preserve the existing native admin UI while adding the sandbox artifact, or is an intentionally non-upgradeable sandbox-only transition acceptable on main?",
+  "rationale": "The branch deliberately removes an established native UI while documenting that populated native installations must not use the replacement; only maintainers can choose the compatibility contract for that transition.",
+  "options": [
+    {
+      "title": "Preserve native compatibility",
+      "body": "Retain the native admin descriptor, pages, and package export while offering the sandbox artifact as an additional fresh-install path.",
+      "recommended": true
+    },
+    {
+      "title": "Adopt sandbox-only administration",
+      "body": "Accept the native admin removal only with an explicitly approved upgrade boundary and a supported migration or prevention mechanism.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Preserve native compatibility",
+    "body": "Retain the native admin descriptor, pages, and package export while offering the sandbox artifact as an additional fresh-install path.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "They are the visible recent contributor for the sandbox/admin implementation and can route the compatibility decision to the appropriate repository owner.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/27.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/27#issuecomment-5851947735",
+    "reviewedAt": "2026-09-27T02:27:18.031Z",
+    "mainSha": "51ab023b14490e3bff821e5310dd1c323092df30"
+  }
+}
