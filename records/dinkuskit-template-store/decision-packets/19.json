@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T17:02:57.758Z",
-  "updatedAt": "2026-09-30T16:59:53Z",
+  "generatedAt": "2026-09-30T17:16:22.037Z",
+  "updatedAt": "2026-09-30T17:13:32Z",
   "subject": {
     "repo": "dinkuskit/template-store",
     "kind": "pull_request",
@@ -17,39 +17,39 @@
       "merge-risk: 🚨 automation"
     ],
     "createdAt": "2026-09-30T02:18:33Z",
-    "updatedAt": "2026-09-30T16:59:53Z",
-    "headSha": "9826ca9072e4c0398405bfddfe044695a8c78d73"
+    "updatedAt": "2026-09-30T17:13:32Z",
+    "headSha": "75ba1eb0e2be04c1dde82d226fe277b06aebd9e4"
   },
   "lane": "security_boundary",
   "priority": "P1",
-  "question": "Should this repository authorize passing CLAWSWEEPER_DISPATCH_TOKEN to the pinned shared Spark reusable workflow?",
-  "rationale": "AGENTS.md requires separate authorization for secrets or permissions changes, and the diff introduces that secret handoff to a reusable workflow.",
+  "question": "Should this repository authorize the new CLAWSWEEPER_DISPATCH_TOKEN-backed shared Spark review relay to replace the existing native review triggers?",
+  "rationale": "The repository policy requires separate authorization for secret or permission changes, and that approval cannot be inferred from the contributor's branch or validation claims.",
   "options": [
     {
-      "title": "Authorize the pinned relay",
-      "body": "Approve this exact pinned reusable-workflow secret handoff after confirming the token is least-privileged and limited to the intended dispatch operation.",
+      "title": "Authorize after live proof",
+      "body": "Approve the relay only after an authorized owner records approval and the final head supplies redacted successful dispatch evidence.",
       "recommended": true
     },
     {
-      "title": "Retain the local caller",
-      "body": "Keep the existing local secret boundary until the shared relay can be authorized with an appropriate least-privilege credential.",
+      "title": "Keep existing triggers",
+      "body": "Decline the new secret-backed relay and retain the current separate review-trigger architecture.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Authorize the pinned relay",
-    "body": "Approve this exact pinned reusable-workflow secret handoff after confirming the token is least-privileged and limited to the intended dispatch operation.",
+    "title": "Authorize after live proof",
+    "body": "Approve the relay only after an authorized owner records approval and the final head supplies redacted successful dispatch evidence.",
     "recommended": true
   },
   "likelyOwner": {
-    "person": "dinkuskong",
-    "reason": "The available adjacent history signal is a branch specifically dedicated to ClawSweeper dispatch proof.",
-    "confidence": "low"
+    "person": "saariuslystoned",
+    "reason": "They implemented the proposed relay and can provide the technical context while an authorized repository owner makes the approval.",
+    "confidence": "medium"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-template-store/items/19.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/template-store/pull/19#issuecomment-5915416023",
-    "reviewedAt": "2026-09-30T17:02:57.758Z",
+    "reviewedAt": "2026-09-30T17:16:22.037Z",
     "mainSha": "97d4ebfa6b31bcc00f3a3b8e72055fc4bc9e03d9"
   }
 }
