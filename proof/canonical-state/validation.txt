@@ -1,0 +1,17 @@
+
+--dry-run: exiting now.
+✔ five enrolled repositories publish, read and retry independently (140.041ms)
+✔ wrong signing key, changed signed payload, unconfigured service and foreign repo fail closed (71.801875ms)
+✔ concurrent competing updates accept one writer and return current tuple to the loser (67.859542ms)
+✔ invalid paths, duplicate sections, bad content and orphan sidecars never partially write (71.394291ms)
+✔ open-to-closed move is atomic and deletion retains a tombstone (70.310125ms)
+✔ chunked Unicode report and receipts survive runtime restart (180.880083ms)
+✔ authenticated readiness and bounded payload rejection (109.07025ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 936.706416
