@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-30T13:49:24.797Z",
+  "updatedAt": "2026-09-30T13:46:31Z",
+  "subject": {
+    "repo": "dinkuskit/commerce",
+    "kind": "pull_request",
+    "number": 27,
+    "title": "feat: Registry-safe Commerce admin with native continuity",
+    "url": "https://github.com/dinkuskit/commerce/pull/27",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2",
+      "merge-risk: 🚨 compatibility"
+    ],
+    "createdAt": "2026-09-27T01:18:55Z",
+    "updatedAt": "2026-09-30T13:46:31Z",
+    "headSha": "1aaa98c52c55f78308d285d620c3e71ff16e0b2a"
+  },
+  "lane": "merge_risk",
+  "priority": "P2",
+  "question": "Should this registry-safe sandbox distribution change be approved with the preserved native compatibility entry as the supported path for populated pilots?",
+  "rationale": "The repository policy reserves merges for explicit human approval, and this feature changes distribution and compatibility boundaries despite adequate implementation and runtime proof.",
+  "options": [
+    {
+      "title": "Approve the compatibility boundary",
+      "body": "Merge with sandbox delivery for fresh installs while retaining the documented native compatibility path and deferring data migration.",
+      "recommended": true
+    },
+    {
+      "title": "Pause for a narrower rollout decision",
+      "body": "Keep the PR open until maintainers specify a different native-pilot migration or release strategy.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the compatibility boundary",
+    "body": "Merge with sandbox delivery for fresh installs while retaining the documented native compatibility path and deferring data migration.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "saariuslystoned",
+    "reason": "The commit history supplied for this PR shows this author implemented both the sandbox and native continuity paths requiring the decision.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-commerce/items/27.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/27#issuecomment-5851947735",
+    "reviewedAt": "2026-09-30T13:49:24.797Z",
+    "mainSha": "51ab023b14490e3bff821e5310dd1c323092df30"
+  }
+}
