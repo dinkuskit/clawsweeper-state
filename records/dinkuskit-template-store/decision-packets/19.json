@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T16:39:40.539Z",
-  "updatedAt": "2026-09-30T16:36:51Z",
+  "generatedAt": "2026-09-30T16:49:35.123Z",
+  "updatedAt": "2026-09-30T16:46:32Z",
   "subject": {
     "repo": "dinkuskit/template-store",
     "kind": "pull_request",
@@ -17,39 +17,39 @@
       "merge-risk: 🚨 automation"
     ],
     "createdAt": "2026-09-30T02:18:33Z",
-    "updatedAt": "2026-09-30T16:36:51Z",
-    "headSha": "bdb80731243d718572e5f0e22ccba08507b247b2"
+    "updatedAt": "2026-09-30T16:46:32Z",
+    "headSha": "9826ca9072e4c0398405bfddfe044695a8c78d73"
   },
   "lane": "security_boundary",
   "priority": "P2",
-  "question": "Should this repository authorize CLAWSWEEPER_DISPATCH_TOKEN for pull_request_target events delegated to the pinned dinkuskit/clawsweeper workflow?",
-  "rationale": "The code makes the handoff deterministic, but accepting a privileged cross-repository secret boundary is an owner security decision rather than a contributor-side correctness choice.",
+  "question": "Should this repository authorize forwarding CLAWSWEEPER_DISPATCH_TOKEN to the SHA-pinned shared ClawSweeper reusable workflow?",
+  "rationale": "The repository policy requires separate authorization for secrets or permissions changes, and that approval is not present in the admitted discussion.",
   "options": [
     {
-      "title": "Approve after scope audit",
-      "body": "Confirm the token is least-privilege and restricted to the immutable relay contract before allowing the shared review route to run.",
+      "title": "Authorize the pinned relay",
+      "body": "Approve this exact SHA-pinned reusable-workflow secret boundary after reviewing the receiving workflow and attach the authorization to this PR.",
       "recommended": true
     },
     {
-      "title": "Require unprivileged admission",
-      "body": "Redesign the relay so pull_request_target admission does not pass a privileged repository secret to the reusable workflow.",
+      "title": "Keep the relay disabled",
+      "body": "Do not merge the secret-forwarding path until a locally contained or otherwise approved review route is available.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Approve after scope audit",
-    "body": "Confirm the token is least-privilege and restricted to the immutable relay contract before allowing the shared review route to run.",
+    "title": "Authorize the pinned relay",
+    "body": "Approve this exact SHA-pinned reusable-workflow secret boundary after reviewing the receiving workflow and attach the authorization to this PR.",
     "recommended": true
   },
   "likelyOwner": {
-    "person": "dinkuskong",
-    "reason": "The closest available repository history signal is the related dispatcher-proof branch.",
+    "person": "dinkuskit",
+    "reason": "The repository owner controls the named dispatch secret and the workflow authorization boundary.",
     "confidence": "low"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-template-store/items/19.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/template-store/pull/19#issuecomment-5915416023",
-    "reviewedAt": "2026-09-30T16:39:40.539Z",
+    "reviewedAt": "2026-09-30T16:49:35.123Z",
     "mainSha": "97d4ebfa6b31bcc00f3a3b8e72055fc4bc9e03d9"
   }
 }
