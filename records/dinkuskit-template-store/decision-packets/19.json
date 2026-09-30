@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-30T16:32:20.099Z",
+  "updatedAt": "2026-09-30T16:29:41Z",
+  "subject": {
+    "repo": "dinkuskit/template-store",
+    "kind": "pull_request",
+    "number": 19,
+    "title": "Use shared Spark subscription review rails",
+    "url": "https://github.com/dinkuskit/template-store/pull/19",
+    "state": "open",
+    "labels": [
+      "rating: 🧂 unranked krab",
+      "status: 📣 needs proof",
+      "P2",
+      "merge-risk: 🚨 security-boundary",
+      "merge-risk: 🚨 automation"
+    ],
+    "createdAt": "2026-09-30T02:18:33Z",
+    "updatedAt": "2026-09-30T16:29:41Z",
+    "headSha": "15085baf1acbbd763e24ea3c900ac76946fef85c"
+  },
+  "lane": "security_boundary",
+  "priority": "P2",
+  "question": "Should Template Store authorize CLAWSWEEPER_DISPATCH_TOKEN to be passed to the pinned shared Spark relay when CLAWSWEEPER_SPARK_ENABLED is enabled?",
+  "rationale": "The change intentionally moves review execution and a repository secret across a reusable-workflow boundary; only repository owners can accept that trust relationship.",
+  "options": [
+    {
+      "title": "Approve after evidence",
+      "body": "Approve the relay after reviewing the pinned workflow's secret handling and obtaining a successful exact-head Store verification run.",
+      "recommended": true
+    },
+    {
+      "title": "Keep local execution",
+      "body": "Retain the local caller workflow if the repository should not delegate this secret-bearing review path.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve after evidence",
+    "body": "Approve the relay after reviewing the pinned workflow's secret handling and obtaining a successful exact-head Store verification run.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "dinkuskong",
+    "reason": "The adjacent dispatch-proof branch is the closest available repository-history signal for the workflow area.",
+    "confidence": "low"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-template-store/items/19.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/template-store/pull/19#issuecomment-5915416023",
+    "reviewedAt": "2026-09-30T16:32:20.099Z",
+    "mainSha": "97d4ebfa6b31bcc00f3a3b8e72055fc4bc9e03d9"
+  }
+}
