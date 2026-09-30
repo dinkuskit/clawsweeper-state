@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T16:49:35.123Z",
-  "updatedAt": "2026-09-30T16:46:32Z",
+  "generatedAt": "2026-09-30T17:02:57.758Z",
+  "updatedAt": "2026-09-30T16:59:53Z",
   "subject": {
     "repo": "dinkuskit/template-store",
     "kind": "pull_request",
@@ -12,44 +12,44 @@
     "labels": [
       "rating: 🧂 unranked krab",
       "status: 📣 needs proof",
-      "P2",
+      "P1",
       "merge-risk: 🚨 security-boundary",
       "merge-risk: 🚨 automation"
     ],
     "createdAt": "2026-09-30T02:18:33Z",
-    "updatedAt": "2026-09-30T16:46:32Z",
+    "updatedAt": "2026-09-30T16:59:53Z",
     "headSha": "9826ca9072e4c0398405bfddfe044695a8c78d73"
   },
   "lane": "security_boundary",
-  "priority": "P2",
-  "question": "Should this repository authorize forwarding CLAWSWEEPER_DISPATCH_TOKEN to the SHA-pinned shared ClawSweeper reusable workflow?",
-  "rationale": "The repository policy requires separate authorization for secrets or permissions changes, and that approval is not present in the admitted discussion.",
+  "priority": "P1",
+  "question": "Should this repository authorize passing CLAWSWEEPER_DISPATCH_TOKEN to the pinned shared Spark reusable workflow?",
+  "rationale": "AGENTS.md requires separate authorization for secrets or permissions changes, and the diff introduces that secret handoff to a reusable workflow.",
   "options": [
     {
       "title": "Authorize the pinned relay",
-      "body": "Approve this exact SHA-pinned reusable-workflow secret boundary after reviewing the receiving workflow and attach the authorization to this PR.",
+      "body": "Approve this exact pinned reusable-workflow secret handoff after confirming the token is least-privileged and limited to the intended dispatch operation.",
       "recommended": true
     },
     {
-      "title": "Keep the relay disabled",
-      "body": "Do not merge the secret-forwarding path until a locally contained or otherwise approved review route is available.",
+      "title": "Retain the local caller",
+      "body": "Keep the existing local secret boundary until the shared relay can be authorized with an appropriate least-privilege credential.",
       "recommended": false
     }
   ],
   "recommendation": {
     "title": "Authorize the pinned relay",
-    "body": "Approve this exact SHA-pinned reusable-workflow secret boundary after reviewing the receiving workflow and attach the authorization to this PR.",
+    "body": "Approve this exact pinned reusable-workflow secret handoff after confirming the token is least-privileged and limited to the intended dispatch operation.",
     "recommended": true
   },
   "likelyOwner": {
-    "person": "dinkuskit",
-    "reason": "The repository owner controls the named dispatch secret and the workflow authorization boundary.",
+    "person": "dinkuskong",
+    "reason": "The available adjacent history signal is a branch specifically dedicated to ClawSweeper dispatch proof.",
     "confidence": "low"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-template-store/items/19.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/template-store/pull/19#issuecomment-5915416023",
-    "reviewedAt": "2026-09-30T16:49:35.123Z",
+    "reviewedAt": "2026-09-30T17:02:57.758Z",
     "mainSha": "97d4ebfa6b31bcc00f3a3b8e72055fc4bc9e03d9"
   }
 }
