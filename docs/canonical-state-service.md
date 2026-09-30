@@ -105,3 +105,12 @@ needs a separate bounded design before broad historical migration.
 
 The service does not project new data into OpenClaw Bay. Bay remains an observer;
 no public dashboard or browser mutation capability is introduced.
+
+
+## Deployed endpoint
+
+The service uses its dedicated `dinkuskit-canonical-state` Workers hostname.
+Internal routes require the signing capability; only `/health` is public.
+`workers_dev` is enabled and preview URLs remain disabled. The production
+allowlist is the five priority repositories. The protected Spark client and
+Worker secret are provisioned together; credentials are never stored here.
