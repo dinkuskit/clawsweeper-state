@@ -12,6 +12,6 @@
   "migrations": [{ "tag": "v1", "new_sqlite_classes": ["RecordTuple"] }],
   "observability": { "enabled": true, "head_sampling_rate": 1 },
   "vars": {
-    "ALLOWED_REPOSITORIES": "dinkuskit/commerce,dinkuskit/template-store,dinkuskit/inventory,dinkuskit/payments,dinkuskit/dinkuskit",
+    "ALLOWED_REPOSITORIES": "dinkuskit/blocks,dinkuskit/template-store,dinkuskit/template-services,dinkuskit/template-marketing,dinkuskit/inventory,dinkuskit/coupons,dinkuskit/bundles,dinkuskit/clawsweeper,dinkuskit/clawsweeper-state,dinkuskit/commerce,dinkuskit/payments,dinkuskit/ship,dinkuskit/dinkuskit",
   },
 }
