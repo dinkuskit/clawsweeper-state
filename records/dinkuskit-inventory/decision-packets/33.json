@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-30T13:42:53.104Z",
+  "updatedAt": "2026-09-30T13:39:43Z",
+  "subject": {
+    "repo": "dinkuskit/inventory",
+    "kind": "pull_request",
+    "number": 33,
+    "title": "feat: add hosted Inventory onboarding control plane and sandbox plugin",
+    "url": "https://github.com/dinkuskit/inventory/pull/33",
+    "state": "open",
+    "labels": [
+      "proof: sufficient",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2",
+      "merge-risk: 🚨 auth-provider",
+      "merge-risk: 🚨 security-boundary"
+    ],
+    "createdAt": "2026-09-30T01:25:33Z",
+    "updatedAt": "2026-09-30T13:39:43Z",
+    "headSha": "57aa9521fdfbddcbde0bf79a70708fdd8e771582"
+  },
+  "lane": "product_direction",
+  "priority": "P2",
+  "question": "Should this repository merge the bounded local onboarding slice before DinkusKit has approved and supplied the production account-provider, hosting, and Registry integration contract?",
+  "rationale": "The branch intentionally leaves those external product and operational boundaries unimplemented, and repository policy reserves merge and deployment approval to Bobby.",
+  "options": [
+    {
+      "title": "Hold for explicit product approval",
+      "body": "Keep the PR open until Bobby explicitly approves merging this local slice and its staged path to the external account and hosting integrations.",
+      "recommended": true
+    },
+    {
+      "title": "Accept the local slice now",
+      "body": "Approve the fail-closed local foundation now while requiring a separately reviewed production integration before any publication or deployment.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Hold for explicit product approval",
+    "body": "Keep the PR open until Bobby explicitly approves merging this local slice and its staged path to the external account and hosting integrations.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "AGENTS.md assigns explicit approval for this merge and any associated deployment or publication.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-inventory/items/33.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/inventory/pull/33#issuecomment-5912467969",
+    "reviewedAt": "2026-09-30T13:42:53.104Z",
+    "mainSha": "1228ed5f0ff74b8e5a6e303a1fe54698b04de441"
+  }
+}
