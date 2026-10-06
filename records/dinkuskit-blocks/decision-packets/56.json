@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-06T17:11:41.091Z",
+  "updatedAt": "2026-10-06T17:09:21Z",
+  "subject": {
+    "repo": "dinkuskit/blocks",
+    "kind": "pull_request",
+    "number": 56,
+    "title": "docs: retire experimental Blocks as historical reference",
+    "url": "https://github.com/dinkuskit/blocks/pull/56",
+    "state": "open",
+    "labels": [
+      "rating: 🧂 unranked krab",
+      "status: 📣 needs proof",
+      "P3"
+    ],
+    "createdAt": "2026-10-06T17:09:09Z",
+    "updatedAt": "2026-10-06T17:09:21Z",
+    "headSha": "57e19562810c29dcd2698bda6475fb43b8b1555f"
+  },
+  "lane": "product_direction",
+  "priority": "P3",
+  "question": "Does Bobby approve retiring this package as a historical reference and merging the associated support-direction notices after the final consumer readback?",
+  "rationale": "The PR changes the repository’s active product direction, and AGENTS.md reserves merge authority to Bobby.",
+  "options": [
+    {
+      "title": "Approve retirement notice",
+      "body": "Confirm the consumer readback and authorize merging the historical-reference documentation.",
+      "recommended": true
+    },
+    {
+      "title": "Keep the package active",
+      "body": "Reject or revise the retirement notices if continued package development remains the intended direction.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve retirement notice",
+    "body": "Confirm the consumer readback and authorize merging the historical-reference documentation.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "The repository policy explicitly assigns merge authority to Bobby for this project.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-blocks/items/56.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/56#issuecomment-6021437160",
+    "reviewedAt": "2026-10-06T17:11:41.091Z",
+    "mainSha": "a5fe05551b875cf8c111d8175c604fc1cb064aa6"
+  }
+}
