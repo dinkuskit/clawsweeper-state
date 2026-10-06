@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T17:11:41.091Z",
-  "updatedAt": "2026-10-06T17:09:21Z",
+  "generatedAt": "2026-10-06T17:21:05.606Z",
+  "updatedAt": "2026-10-06T17:18:44Z",
   "subject": {
     "repo": "dinkuskit/blocks",
     "kind": "pull_request",
@@ -10,44 +10,45 @@
     "url": "https://github.com/dinkuskit/blocks/pull/56",
     "state": "open",
     "labels": [
-      "rating: 🧂 unranked krab",
-      "status: 📣 needs proof",
-      "P3"
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
+      "P2",
+      "merge-risk: 🚨 compatibility"
     ],
     "createdAt": "2026-10-06T17:09:09Z",
-    "updatedAt": "2026-10-06T17:09:21Z",
-    "headSha": "57e19562810c29dcd2698bda6475fb43b8b1555f"
+    "updatedAt": "2026-10-06T17:18:44Z",
+    "headSha": "bf0914350d2bcfc3f599a6d5546adea7098be96a"
   },
   "lane": "product_direction",
-  "priority": "P3",
-  "question": "Does Bobby approve retiring this package as a historical reference and merging the associated support-direction notices after the final consumer readback?",
-  "rationale": "The PR changes the repository’s active product direction, and AGENTS.md reserves merge authority to Bobby.",
+  "priority": "P2",
+  "question": "Does Bobby approve merging the retirement notice before the hosted demo’s replacement and final live-consumer readback are complete?",
+  "rationale": "The PR deliberately changes the project’s public support direction while the submitted audit says one hosted consumer remains on historical Blocks-dependent source.",
   "options": [
     {
-      "title": "Approve retirement notice",
-      "body": "Confirm the consumer readback and authorize merging the historical-reference documentation.",
+      "title": "Approve after consumer gate",
+      "body": "Confirm the final live-consumer readback and explicitly approve the documentation retirement before merging.",
       "recommended": true
     },
     {
-      "title": "Keep the package active",
-      "body": "Reject or revise the retirement notices if continued package development remains the intended direction.",
+      "title": "Defer the notice",
+      "body": "Keep the current project positioning until the hosted consumer replacement is complete.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Approve retirement notice",
-    "body": "Confirm the consumer readback and authorize merging the historical-reference documentation.",
+    "title": "Approve after consumer gate",
+    "body": "Confirm the final live-consumer readback and explicitly approve the documentation retirement before merging.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "Bobby",
-    "reason": "The repository policy explicitly assigns merge authority to Bobby for this project.",
+    "reason": "The checked-in policy names Bobby as the required merge authority.",
     "confidence": "high"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-blocks/items/56.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/blocks/pull/56#issuecomment-6021437160",
-    "reviewedAt": "2026-10-06T17:11:41.091Z",
+    "reviewedAt": "2026-10-06T17:21:05.606Z",
     "mainSha": "a5fe05551b875cf8c111d8175c604fc1cb064aa6"
   }
 }
