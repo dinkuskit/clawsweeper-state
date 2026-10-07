@@ -57,14 +57,14 @@ env.RECORDS (RecordTuple)                                                  Durab
 env.ALLOWED_REPOSITORIES ("dinkuskit/blocks,dinkuskit/template-s...")      Environment Variable
 
 --dry-run: exiting now.
-✔ five enrolled repositories publish, read and retry independently (137.29775ms)
-✔ wrong signing key, changed signed payload, unconfigured service and foreign repo fail closed (75.757875ms)
-✔ concurrent competing updates accept one writer and return current tuple to the loser (71.418917ms)
-✔ invalid paths, duplicate sections, bad content and orphan sidecars never partially write (73.645541ms)
-✔ open-to-closed move is atomic and deletion retains a tombstone (68.568125ms)
-✔ chunked Unicode report and receipts survive runtime restart (164.556625ms)
-✔ authenticated readiness and bounded payload rejection (107.085709ms)
-✔ an exact delayed delivery cannot resurrect a deleted tuple (64.415292ms)
+✔ five enrolled repositories publish, read and retry independently (1578.498583ms)
+✔ wrong signing key, changed signed payload, unconfigured service and foreign repo fail closed (73.829375ms)
+✔ concurrent competing updates accept one writer and return current tuple to the loser (74.541416ms)
+✔ invalid paths, duplicate sections, bad content and orphan sidecars never partially write (71.171542ms)
+✔ open-to-closed move is atomic and deletion retains a tombstone (67.754084ms)
+✔ chunked Unicode report and receipts survive runtime restart (166.200125ms)
+✔ authenticated readiness and bounded payload rejection (109.318958ms)
+✔ an exact delayed delivery cannot resurrect a deleted tuple (65.27475ms)
 ℹ tests 8
 ℹ suites 0
 ℹ pass 8
@@ -72,4 +72,4 @@ env.ALLOWED_REPOSITORIES ("dinkuskit/blocks,dinkuskit/template-s...")      Envir
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 979.426042
+ℹ duration_ms 2421.842083

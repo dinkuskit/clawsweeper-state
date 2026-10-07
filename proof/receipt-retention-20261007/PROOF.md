@@ -14,3 +14,8 @@ hashes are in manifest.json. No deployment or live-record mutation is claimed.
 Delivery identities now remain for the tuple lifetime. Receipt storage grows
 with accepted deliveries; this prevents unsafe expiry without changing the
 upstream digest-based compare-and-swap protocol.
+
+The same narrow sharp 0.35.5 development dependency override used in the Saari
+service fixes the librsvg advisory in the Miniflare/Wrangler toolchain. The
+Worker imports no image processing code. The post-patch dependency audit reports
+zero vulnerabilities; the full Worker check was rerun and passes.
