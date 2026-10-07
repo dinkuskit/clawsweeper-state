@@ -1,6 +1,6 @@
 # Native review canary
 
-Revision: 1
+Revision: 2
 
 This temporary documentation change exercises review against the state branch.
 Validate ready and subsequent revision admission, the review receipt, and
