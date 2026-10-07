@@ -1,0 +1,6 @@
+{
+  "service/src/index.ts": "b34f485690b6102fb3b82abf75a907fb04c9b0d728aef1522734087493a28967",
+  "service/src/protocol.ts": "2d52e8dd3d1584d348ab1bd30358fb97a5924c24a3cba08b5ec7561da07ab09d",
+  "service/wrangler.jsonc": "33a95dad5b90fa774adbb3c587810379b0adf65bfd98773ed13a6404bcd2e3c8",
+  "service/package-lock.json": "3a635bbfaa56b18a7e6f7c4da8e41240951b03b3faf94fcf082c57d7320fe8ec"
+}

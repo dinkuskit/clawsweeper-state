@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-30T17:25:24.903Z",
+  "updatedAt": "2026-09-30T17:23:00Z",
+  "subject": {
+    "repo": "dinkuskit/template-store",
+    "kind": "pull_request",
+    "number": 19,
+    "title": "Use shared Spark subscription review rails",
+    "url": "https://github.com/dinkuskit/template-store/pull/19",
+    "state": "open",
+    "labels": [
+      "rating: 🧂 unranked krab",
+      "status: 📣 needs proof",
+      "P2",
+      "merge-risk: 🚨 security-boundary",
+      "merge-risk: 🚨 automation"
+    ],
+    "createdAt": "2026-09-30T02:18:33Z",
+    "updatedAt": "2026-09-30T17:23:00Z",
+    "headSha": "75ba1eb0e2be04c1dde82d226fe277b06aebd9e4"
+  },
+  "lane": "security_boundary",
+  "priority": "P2",
+  "question": "Should this repository forward CLAWSWEEPER_DISPATCH_TOKEN to the pinned shared Spark reusable workflow for review publication?",
+  "rationale": "This changes the repository's credential trust boundary, while the asserted owner approval is only in the PR description and no maintainer discussion confirms its scope.",
+  "options": [
+    {
+      "title": "Approve the scoped relay boundary",
+      "body": "Confirm that the pinned relay and dispatch-token scope are authorized, then require redacted live-run evidence before merge.",
+      "recommended": true
+    },
+    {
+      "title": "Keep review execution local",
+      "body": "Retain a repository-local review workflow if the shared relay should not receive this repository credential.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve the scoped relay boundary",
+    "body": "Confirm that the pinned relay and dispatch-token scope are authorized, then require redacted live-run evidence before merge.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "Bobby",
+    "reason": "The PR identifies Bobby as the decision owner for adopting the shared review rail.",
+    "confidence": "low"
+  },
+  "source": {
+    "reportPath": "../state/records/dinkuskit-template-store/items/19.md",
+    "reviewCommentUrl": "https://github.com/dinkuskit/template-store/pull/19#issuecomment-5915416023",
+    "reviewedAt": "2026-09-30T17:25:24.903Z",
+    "mainSha": "97d4ebfa6b31bcc00f3a3b8e72055fc4bc9e03d9"
+  }
+}

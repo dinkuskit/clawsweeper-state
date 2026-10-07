@@ -1,55 +1,55 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-27T02:27:18.031Z",
-  "updatedAt": "2026-09-27T02:24:55Z",
+  "generatedAt": "2026-09-30T13:49:24.797Z",
+  "updatedAt": "2026-09-30T13:46:31Z",
   "subject": {
     "repo": "dinkuskit/commerce",
     "kind": "pull_request",
     "number": 27,
-    "title": "feat: Registry-safe Commerce Block Kit admin",
+    "title": "feat: Registry-safe Commerce admin with native continuity",
     "url": "https://github.com/dinkuskit/commerce/pull/27",
     "state": "open",
     "labels": [
       "proof: sufficient",
-      "rating: 🦐 gold shrimp",
-      "status: ⏳ waiting on author",
+      "rating: 🐚 platinum hermit",
+      "status: 👀 ready for maintainer look",
       "P2",
       "merge-risk: 🚨 compatibility"
     ],
     "createdAt": "2026-09-27T01:18:55Z",
-    "updatedAt": "2026-09-27T02:24:55Z",
-    "headSha": "0d120659d39e859ed4d32224b5981a18029ccb01"
+    "updatedAt": "2026-09-30T13:46:31Z",
+    "headSha": "1aaa98c52c55f78308d285d620c3e71ff16e0b2a"
   },
-  "lane": "product_direction",
+  "lane": "merge_risk",
   "priority": "P2",
-  "question": "Should this pilot preserve the existing native admin UI while adding the sandbox artifact, or is an intentionally non-upgradeable sandbox-only transition acceptable on main?",
-  "rationale": "The branch deliberately removes an established native UI while documenting that populated native installations must not use the replacement; only maintainers can choose the compatibility contract for that transition.",
+  "question": "Should this registry-safe sandbox distribution change be approved with the preserved native compatibility entry as the supported path for populated pilots?",
+  "rationale": "The repository policy reserves merges for explicit human approval, and this feature changes distribution and compatibility boundaries despite adequate implementation and runtime proof.",
   "options": [
     {
-      "title": "Preserve native compatibility",
-      "body": "Retain the native admin descriptor, pages, and package export while offering the sandbox artifact as an additional fresh-install path.",
+      "title": "Approve the compatibility boundary",
+      "body": "Merge with sandbox delivery for fresh installs while retaining the documented native compatibility path and deferring data migration.",
       "recommended": true
     },
     {
-      "title": "Adopt sandbox-only administration",
-      "body": "Accept the native admin removal only with an explicitly approved upgrade boundary and a supported migration or prevention mechanism.",
+      "title": "Pause for a narrower rollout decision",
+      "body": "Keep the PR open until maintainers specify a different native-pilot migration or release strategy.",
       "recommended": false
     }
   ],
   "recommendation": {
-    "title": "Preserve native compatibility",
-    "body": "Retain the native admin descriptor, pages, and package export while offering the sandbox artifact as an additional fresh-install path.",
+    "title": "Approve the compatibility boundary",
+    "body": "Merge with sandbox delivery for fresh installs while retaining the documented native compatibility path and deferring data migration.",
     "recommended": true
   },
   "likelyOwner": {
     "person": "saariuslystoned",
-    "reason": "They are the visible recent contributor for the sandbox/admin implementation and can route the compatibility decision to the appropriate repository owner.",
+    "reason": "The commit history supplied for this PR shows this author implemented both the sandbox and native continuity paths requiring the decision.",
     "confidence": "medium"
   },
   "source": {
     "reportPath": "../state/records/dinkuskit-commerce/items/27.md",
     "reviewCommentUrl": "https://github.com/dinkuskit/commerce/pull/27#issuecomment-5851947735",
-    "reviewedAt": "2026-09-27T02:27:18.031Z",
+    "reviewedAt": "2026-09-30T13:49:24.797Z",
     "mainSha": "51ab023b14490e3bff821e5310dd1c323092df30"
   }
 }

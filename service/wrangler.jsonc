@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "dinkuskit-canonical-state",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-30",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "durable_objects": {
+    "bindings": [{ "name": "RECORDS", "class_name": "RecordTuple" }],
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["RecordTuple"] }],
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  "vars": {
+    "ALLOWED_REPOSITORIES": "dinkuskit/blocks,dinkuskit/template-store,dinkuskit/template-services,dinkuskit/template-marketing,dinkuskit/inventory,dinkuskit/coupons,dinkuskit/bundles,dinkuskit/clawsweeper,dinkuskit/clawsweeper-state,dinkuskit/commerce,dinkuskit/payments,dinkuskit/ship,dinkuskit/dinkuskit",
+  },
+}
