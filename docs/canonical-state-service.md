@@ -39,8 +39,9 @@ mutation supplies each exact path once. A missing `contentBase64` deletes that
 section. There can be only one primary report and no orphan sidecars or closed
 work plan. Packet references must match their content digest and subject.
 Each file is limited to 2 MiB; each request to 12 MiB. UTF-8 reports are chunked
-into small SQLite values. Receipt retention is 30 days, with bounded pruning
-on successful publication. Digest-based compare-and-swap deliberately matches
+into small SQLite values. Delivery receipts are retained for the tuple lifetime, including after
+deletion, so delayed exact retries cannot resurrect removed records. Receipt
+storage grows with accepted deliveries. Digest-based compare-and-swap deliberately matches
 the upstream contract: it does not impose a monotonic PR-head order or reject
 an empty-to-empty digest cycle. The trusted publisher must revalidate the live
 PR before publishing, including after a long-running review.

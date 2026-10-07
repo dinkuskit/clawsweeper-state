@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash, createHmac } from "node:crypto";
-import { mkdtemp, rm } from "node:fs/promises";
+import { mkdtemp, readFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { Miniflare, convertV4MiniflareOptions } from "miniflare";
@@ -311,6 +311,40 @@ test("authenticated readiness and bounded payload rejection", async () => {
         )
       ).status,
       413,
+    );
+  } finally {
+    await mf.dispose();
+  }
+});
+
+test("an exact delayed delivery cannot resurrect a deleted tuple", async () => {
+  // Advance the Worker clock by 31 days per publication without changing its code.
+  const source = await readFile("dist/index.js", "utf8");
+  const { scriptPath, ...baseOptions } = options;
+  const mf = runtime({
+    ...baseOptions,
+    script: `let clock = 0; Date.now = () => (clock += 31 * 24 * 60 * 60 * 1000);\n${source}`,
+  });
+  try {
+    const first = mutation();
+    assert.equal((await publish(mf, first)).status, 202);
+    const deletion = structuredClone(first);
+    deletion.deliveryId = "delete-after-31-days";
+    deletion.operations[0].expectedDigest = hash(
+      Buffer.from(first.operations[0].contentBase64, "base64"),
+    );
+    delete deletion.operations[0].contentBase64;
+    assert.equal((await publish(mf, deletion)).status, 202);
+    const retry = await publish(mf, first);
+    assert.equal(retry.body.deduped, true);
+    assert.equal(retry.body.revision, 1);
+    const state = await request(
+      mf,
+      "/internal/state/tuples/dinkuskit-commerce/42",
+    );
+    assert.equal(state.body.current.revision, 2);
+    assert(
+      state.body.current.operations.every((op) => op.expectedDigest === null),
     );
   } finally {
     await mf.dispose();

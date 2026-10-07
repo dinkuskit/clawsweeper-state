@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-10-07T07:49:23.622557+00:00",
+  "base": "95dc6494f41bd0d9751357d58582ae5f98a0fd1e",
+  "source_files_sha256": {
+    "service/src/index.ts": "dce46fa2fc677adf9355bacd86e636fb3dd3081987ec81e47febc7b8153ca5bb",
+    "service/test/service.test.mjs": "61f60930cab4407a8638e16d1b5abc38289c007c1d0dab0b36a68eac4c463665",
+    "service/package.json": "312f0bd79a845099c0a0c81adb2b830593510b9f461a71b60b28fe6d512579d6",
+    "service/package-lock.json": "803180a3588933f891a72016ab7e42823b8a84b06f00a375cd60374b5962a94e",
+    "service/worker-configuration.d.ts": "d9f48dccad99bed1b617756c87922dbcab9c3ed2a89376b00954b0283d27f176"
+  },
+  "artifact_sha256": {
+    "before.log": "f70c254b6653ec963fc896c07ec268004c6a908660d99ca3d5c51e9ec86bf81f",
+    "after.log": "34521239ba307fa76419c6006672bf0ca8e48f088de2525825a7e468506e8eb2",
+    "dependency-audit.json": "e304c7765a22ff12e00bcd0231106732fa7883332deb99be608caabe677cdbab"
+  }
+}

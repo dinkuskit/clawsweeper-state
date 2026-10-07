@@ -217,10 +217,8 @@ export class RecordTuple extends DurableObject<RuntimeEnv> {
         revision,
         now,
       );
-      this.ctx.storage.sql.exec(
-        "DELETE FROM receipts WHERE delivery_id IN (SELECT delivery_id FROM receipts WHERE received_at<? ORDER BY received_at LIMIT 100)",
-        now - 30 * 24 * 60 * 60 * 1000,
-      );
+      // Retain delivery identities for this tuple's lifetime. Expiring one can
+      // let its original empty-baseline mutation resurrect a deleted record.
       return {
         status: 202,
         body: { ok: true, accepted: true, deduped: false, revision },
