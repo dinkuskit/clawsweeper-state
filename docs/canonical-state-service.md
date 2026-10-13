@@ -113,7 +113,9 @@ no public dashboard or browser mutation capability is introduced.
 The service uses its dedicated `dinkuskit-canonical-state` Workers hostname.
 Internal routes require the signing capability; only `/health` is public.
 `workers_dev` is enabled and preview URLs remain disabled. The production
-allowlist covers all 13 enrolled public DinkusKit repositories. The five
-priority repositories lead activation; the two private repositories remain
-outside this public state service. The protected Spark client and
-Worker secret are provisioned together; credentials are never stored here.
+allowlist covers the 12 enrolled public DinkusKit repositories (archived
+`dinkuskit/blocks` is intentionally omitted; remaining callers receive
+`repository_not_allowed` before Durable Object I/O). The five priority
+repositories lead activation; the two private repositories remain outside
+this public state service. The protected Spark client and Worker secret are
+provisioned together; credentials are never stored here.
