@@ -1,7 +1,6 @@
-Task: activate books and dinkus-guide; owner: current Codex chat.
-Source: clawsweeper-state state@209cd973b0a858094dcb4bdab627130088bdc749.
-Branch: codex/books-guide-canonical-activation.
-Mode: mutate; user approved canonical enrollment and activation.
-Acceptance: authenticated readiness for both; queue secrets, queue deploy, two clean host syncs, publisher probe, enable, sequential exact-head smoke.
-Stop: dirty host checkout, ambiguous credentials, failed queue admission.
-Status: preparing canonical allowlist; retain live-journeys already live.
+Status: BLOCKED — Books receiver cannot read private target (HTTP 404).
+Owner: current Codex task.
+Source: spark-dgx 26143ca44223298dc38b752187d596e8cffe1fd5; canonical deployment source d5a3f7e.
+Completed: canonical allowlist deployment, both queue secrets, exact queue Worker deployment, both clean host fast-forward syncs, both publisher probes, both enable flags, private mapping metadata.
+Smoke: books#3 closed unmerged; receiver 40345235633 failed admission; Guide smoke not opened.
+Next: fix the owned private-repository admission credential route, then repeat the bounded sequential smoke. No fallback authorized.
