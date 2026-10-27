@@ -1,0 +1,2 @@
+{"event":"admitted","scope":["dinkuskit/books","dinkuskit/dinkus-guide"]}
+{"event":"stopped","reason":"books_receiver_private_repo_http_404","sender":40345153001,"receiver":40345235633}
